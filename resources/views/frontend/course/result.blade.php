@@ -18,98 +18,57 @@
         <div class="content">
             <div class="section-title">
                 <p class="mb--10">Quiz</p>
-                <h5>Musical Theory</h5>
+                <h5>Test {{$test->meta_value}}</h5>
+                
             </div>
-
+            <?php $mark = 0; ?>
             <div class="rbt-dashboard-table table-responsive mobile-table-750 mt--30">
                 <table class="rbt-table table table-borderless">
                     <thead>
                         <tr>
-                            <th>Quiz</th>
-                            <th>Qus</th>
-                            <th>TM</th>
+                            <th>Question</th>
+                            <th>Answered</th>
                             <th>CA</th>
                             <th>Result</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($questions as $question)
+                        @php
+                        $result = App\Models\UserResult::where('user_id', Auth::id())->where('question_id', $question->id)->first();
+                        $answer = $question->{$question->answer};
+                        $res = $question->{$result->answered}                        
+                        @endphp
                         <tr>
                             <th>
-                                <p class="b3 mb--5">December 26, 2023</p>
+                                <p class="b3 mb--5">
+                                    {{$question->question}}
+                                </p>
                             </th>
                             <td>
-                                <p class="b3">4</p>
+                                <p class="b3">
+                                    {{$res}}
+                                </p>
                             </td>
                             <td>
-                                <p class="b3">8</p>
+                                <p class="b3">
+                                    {{$answer}}
+                                </p>
                             </td>
                             <td>
-                                <p class="b3">4</p>
+                                @if($result->answered === $question->answer)
+                                <?php $mark += 1?>
+                                <span class="rbt-badge-5 bg-color-success-opacity color-success">Correct</span>
+                                @else
+                                <span class="rbt-badge-5 bg-color-danger-opacity color-danger">Incorrect</span>
+                                @endif
                             </td>
-                            <td>
-                                <span class="rbt-badge-5 bg-color-success-opacity color-success">Pass</span>
-                            </td>
-
                         </tr>
-                        <tr>
-                            <th>
-                                <p class="b3 mb--5">December 26, 2023</p>
-                            </th>
-                            <td>
-                                <p class="b3">4</p>
-                            </td>
-                            <td>
-                                <p class="b3">8</p>
-                            </td>
-                            <td>
-                                <p class="b3">4</p>
-                            </td>
-                            <td>
-                                <span class="rbt-badge-5 bg-color-danger-opacity color-danger">Fail</span>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th>
-                                <p class="b3 mb--5">December 26, 2023</p>
-                            </th>
-                            <td>
-                                <p class="b3">4</p>
-                            </td>
-                            <td>
-                                <p class="b3">8</p>
-                            </td>
-                            <td>
-                                <p class="b3">4</p>
-                            </td>
-                            <td>
-                                <span class="rbt-badge-5 bg-color-success-opacity color-success">Pass</span>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th>
-                                <p class="b3 mb--5">December 26, 2023</p>
-                            </th>
-                            <td>
-                                <p class="b3">4</p>
-                            </td>
-                            <td>
-                                <p class="b3">8</p>
-                            </td>
-                            <td>
-                                <p class="b3">4</p>
-                            </td>
-                            <td>
-                                <span class="rbt-badge-5 bg-color-danger-opacity color-danger">Fail</span>
-                            </td>
-
-                        </tr>
-
-
+                        @endforeach
                     </tbody>
 
                 </table>
+                <p>Result: {{$mark}} out of 10</p>
             </div>
         </div>
     </div>

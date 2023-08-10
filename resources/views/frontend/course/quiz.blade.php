@@ -38,25 +38,25 @@
                         <div class="row g-3 mt--10">
                             <div class="col-lg-6">
                                 <div class="rbt-form-check">
-                                    <input class="form-check-input" value="{{$question->option_a}}" type="radio" name="{{$question->id}}" id="rbt-radio-{{$question->id}}-1">
+                                    <input class="form-check-input" value="option_a" type="radio" name="{{$question->id}}" id="rbt-radio-{{$question->id}}-1">
                                     <label class="form-check-label" for="rbt-radio-{{$question->id}}-1"> {{$question->option_a}}</label>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="rbt-form-check">
-                                    <input class="form-check-input" value="{{$question->option_b}}" type="radio" name="{{$question->id}}" id="rbt-radio-{{$question->id}}-2">
+                                    <input class="form-check-input" value="option_b" type="radio" name="{{$question->id}}" id="rbt-radio-{{$question->id}}-2">
                                     <label class="form-check-label" for="rbt-radio-{{$question->id}}-2"> {{$question->option_b}}</label>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="rbt-form-check">
-                                    <input class="form-check-input" value="{{$question->option_c}}" type="radio" name="{{$question->id}}" id="rbt-radio-{{$question->id}}-3">
+                                    <input class="form-check-input" value="option_c" type="radio" name="{{$question->id}}" id="rbt-radio-{{$question->id}}-3">
                                     <label class="form-check-label" for="rbt-radio-{{$question->id}}-3"> {{$question->option_c}}</label>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="rbt-form-check">
-                                    <input class="form-check-input" value="{{$question->option_d}}" type="radio" name="{{$question->id}}" id="rbt-radio-{{$question->id}}-4">
+                                    <input class="form-check-input" value="option_d" type="radio" name="{{$question->id}}" id="rbt-radio-{{$question->id}}-4">
                                     <label class="form-check-label" for="rbt-radio-{{$question->id}}-4"> {{$question->option_d}}</label>
                                 </div>
                             </div>

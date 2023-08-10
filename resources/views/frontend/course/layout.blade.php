@@ -41,6 +41,7 @@
 <?php
 $user =  Auth::user();
 $currentTest = App\Models\UserMeta::where('user_id', $user->id)->where('meta_key', 'current_test')->first();
+$test = $currentTest->meta_value;
 $videoList = App\Models\Video::where('test', (int)$currentTest->meta_value)->orderBy('serial', 'ASC')->get();
 $currentUrl = basename(request()->path());
 $currentVideoID = App\Models\UserMeta::where('user_id', $user->id)->where('meta_key', 'last_video')->first();
@@ -111,7 +112,7 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
                             <div class="accordion-item card">
                                 <h2 class="accordion-header card-header" id="headingTwo2">
                                     <button class="accordion-button collapsed {{$currentUrl === 'quiz' ? 'show' : ''}} {{$currentUrl === 'result' ? 'show' : ''}}" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#collapseTwo2" aria-controls="collapseTwo2">
-                                        Quiz <span class="rbt-badge-5 ml--10">{{$currentTest->meta_value}}/3</span>
+                                        Quiz <span class="rbt-badge-5 ml--10">{{$test}}/3</span>
                                     </button>
                                 </h2>
                                 <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2">

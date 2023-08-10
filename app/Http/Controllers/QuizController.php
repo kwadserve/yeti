@@ -25,12 +25,7 @@ class QuizController extends Controller
         $user =  Auth::user();
         $test = UserMeta::where('user_id', $user->id)->where('meta_key', 'current_test')->first();
         $questions = Question::where('test', (int)$test->meta_value)->get();
-        $results = [];
-        foreach($questions as $question){
-            $result = UserResult::where('user_id', $user->id)->where('question_id', $question->id)->first();
-            $results[] = $result; 
-        }
-        return view('frontend.course.result', compact('questions', 'results'));
+        return view('frontend.course.result', compact('questions', 'test'));
     }
 
     //Submit Quiz
