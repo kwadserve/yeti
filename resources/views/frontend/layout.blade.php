@@ -159,20 +159,20 @@
                     <div class="content">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="assets/images/logo/logo.png" alt="Education Logo Images">
+                                <img src="assets/images/yiflogodark.png" alt="YIF logo">
                             </a>
                         </div>
                         <div class="rbt-btn-close">
                             <button class="close-button rbt-round-btn"><i class="feather-x"></i></button>
                         </div>
                     </div>
-                    <p class="description">Histudy is a education website template. You can customize all.</p>
+                    <p class="description">ARE YOU READY TO BE A YETI?<br></p>
                     <ul class="navbar-top-left rbt-information-list justify-content-start">
                         <li>
-                            <a href="mailto:hello@example.com"><i class="feather-mail"></i>example@gmail.com</a>
+                            <a href="mailto:hello@example.com"><i class="feather-user"></i>Login</a>
                         </li>
                         <li>
-                            <a href="#"><i class="feather-phone"></i>(302) 555-0107</a>
+                            <a href="#"><i class="feather-book"></i>Register</a>
                         </li>
                     </ul>
                 </div>
@@ -185,22 +185,18 @@
                     <div class="social-share-wrapper">
                         <span class="rbt-short-title d-block">Find With Us</span>
                         <ul class="social-icon social-default transparent-with-border justify-content-start mt--20">
-                            <li><a href="https://www.facebook.com/">
-                                    <i class="feather-facebook"></i>
-                                </a>
-                            </li>
-                            <li><a href="https://www.twitter.com/">
-                                    <i class="feather-twitter"></i>
-                                </a>
-                            </li>
-                            <li><a href="https://www.instagram.com/">
-                                    <i class="feather-instagram"></i>
-                                </a>
-                            </li>
-                            <li><a href="https://www.linkdin.com/">
-                                    <i class="feather-linkedin"></i>
-                                </a>
-                            </li>
+                           <li><a href="https://www.facebook.com/youngindiafdn">
+                                            <i class="feather-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://twitter.com/YoungIndiaFDN">
+                                            <i class="feather-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/youngindiafdn/">
+                                            <i class="feather-instagram"></i>
+                                        </a>
+                                    </li>
                         </ul>
                     </div>
                 </div>
@@ -223,19 +219,10 @@
                                     </a>
                                 </div>
 
-                                <p class="description mt--20">We’re always in search for talented
-                                    and motivated people. Don’t be shy introduce yourself!
+                                <p class="description mt--20">Young India Foundation is a public trust registered u/s 12A of the Income Tax Act, 1961, and with the Director of Income Tax (Exemptions) u/s 80G.
                                 </p>
 
-                                <div class="contact-btn mt--30">
-                                    <a class="rbt-btn hover-icon-reverse btn-border-gradient radius-round" href="#">
-                                        <div class="icon-reverse-wrapper">
-                                            <span class="btn-text">Contact With Us</span>
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        </div>
-                                    </a>
-                                </div>
+                                
                             </div>
                         </div>
 
@@ -276,27 +263,24 @@
                             <div class="footer-widget">
                                 <h5 class="ft-title">Get Contact</h5>
                                 <ul class="ft-link">
-                                    <li><span>Phone:</span> <a href="#">(406) 555-0120</a></li>
-                                    <li><span>E-mail:</span> <a href="mailto:hr@example.com">rainbow@example.com</a></li>
-                                    <li><span>Location:</span> North America, USA</li>
+                                    <li><span>Phone:</span> <a href="#">+91-9833824000</a></li>
+                                    <li><span>E-mail:</span> <a href="mailto:hr@example.com">contact@youngindiafoundation.org</a></li>
+                                    <li><span>Location:</span>  C14, Block C, Panchsheel Enclave, New Delhi, Delhi 110017</li>
                                 </ul>
                                 <ul class="social-icon social-default icon-naked justify-content-start mt--20">
-                                    <li><a href="https://www.facebook.com/">
+                                    <li><a href="https://www.facebook.com/youngindiafdn">
                                             <i class="feather-facebook"></i>
                                         </a>
                                     </li>
-                                    <li><a href="https://www.twitter.com/">
+                                    <li><a href="https://twitter.com/YoungIndiaFDN">
                                             <i class="feather-twitter"></i>
                                         </a>
                                     </li>
-                                    <li><a href="https://www.instagram.com/">
+                                    <li><a href="https://www.instagram.com/youngindiafdn/">
                                             <i class="feather-instagram"></i>
                                         </a>
                                     </li>
-                                    <li><a href="https://www.linkdin.com/">
-                                            <i class="feather-linkedin"></i>
-                                        </a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>
