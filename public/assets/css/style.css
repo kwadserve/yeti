@@ -119,8 +119,8 @@
 /*-- Variables --*/
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400&amp;display=swap");
 :root {
-  --color-primary: #2f57ef;
-  --color-secondary: #b966e7;
+  --color-primary: #d4642b;
+  --color-secondary: #599f53;
   --color-coral: #E9967A;
   --color-violet: #800080;
   --color-pink: #DB7093;
@@ -130,7 +130,7 @@
   --color-white-off: #FFFFFFAB;
   --color-bodyest: #273041;
   --color-dark: #27272E;
-  --color-darker: #192335;
+  --color-darker: #202020;
   --color-black: #111113;
   --color-grey: rgba(207,207,207,.24);
   --color-grey2: #f4f5f7;
@@ -139,8 +139,8 @@
   --color-gray-lighter: #ebebeb;
   --color-light: #F5F7FA;
   --color-lighter: #F2F5F9;
-  --primary-opacity: #2f57ef21;
-  --secondary-opacity: #b966e721;
+  --primary-opacity: #00000012;
+  --secondary-opacity: #57ef1f21;
   --coral-opacity: #E9967A21;
   --violet-opacity: #80008021;
   --pink-opacity: #DB709321;
@@ -165,7 +165,7 @@
   --color-primary-lighter: #EEEEFF;
   --color-secondary-alt: #fef4f4;
   --color-extra: rgb(249, 249, 255);
-  --color-extra2: #F9F9FF;
+  --color-extra2: #fff3ec;
   --color-border: #e6e3f1;
   --color-border-2: #e6e3f14f;
   --color-badge-1: #303F5B;
@@ -228,13 +228,13 @@
   --div-gap-1: 10px;
   --gradient-1: linear-gradient(rgb(255, 255, 255) 0%, rgb(239, 241, 255) 100%);
   --gradient-4: linear-gradient(180deg,#fff,#f6f9ff);
-  --gradient-2: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(240, 242, 255) 100%);
+  --gradient-2: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255 243 236) 100%);
   --gradient-3: linear-gradient(90deg, #8DA9FC 0%, #B48DD5 100%);
   --gradient-4: linear-gradient(180deg, #EFF1FF 0%, #FFFFFF 100%);
   --gradient-5: linear-gradient(rgb(239, 241, 255) 0%, rgb(239, 241, 255) 100%);
   --gradient-6: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(251, 199, 226, 0.15), rgba(220, 217, 254, 0.15));
   --gradient-7: linear-gradient(218.15deg, var(--color-secondary) 0%, var(--color-primary) 100%);
-  --gradient-8: linear-gradient(270deg, #9e77ff 0%, #4460ff 100%);
+  --gradient-8: linear-gradient(270deg, #343435 0%, #000000 100%);
   --gradient-9: linear-gradient(180deg, #6827FF 0%, #E3F0FF 100%);
 }
 
@@ -22115,7 +22115,7 @@ body.modal-open {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.5px;
-  text-align: center;
+  text-align: left;
 }
 @media only screen and (max-width: 575px) {
   .rbt-list-style-2 li {
@@ -29219,3 +29219,13 @@ Course Sidebar
   }
 }
 /*# sourceMappingURL=../maps/style.css.map */
+
+/* ........custom CSS...... */
+
+.bullet {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 10px 0 10px 20px;
+    text-indent: -1em;
+}
+
