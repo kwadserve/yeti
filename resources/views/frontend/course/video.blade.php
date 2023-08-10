@@ -1,6 +1,6 @@
 @extends('frontend.course.layout')
 @section('rightSideContent')
-    @if($test == 1 && $video->serial == 1)
+    @if((int)$test->meta_value == 1 && $video->serial == 1)
     <div class="rbt-lesson-rightsidebar overflow-hidden" id="course-introduction">
         <div class="lesson-top-bar">
             <div class="lesson-top-left">
@@ -41,7 +41,7 @@
 
     </div>
     @endif
-    <div class="rbt-lesson-rightsidebar overflow-hidden lesson-video {{$test == 1 && $video->serial == 1 ? 'd-none' : ''}}" id="course-video">
+    <div class="rbt-lesson-rightsidebar overflow-hidden lesson-video {{(int)$test->meta_value == 1 && $video->serial == 1 ? 'd-none' : ''}}" id="course-video">
         <div class="lesson-top-bar">
             <div class="lesson-top-left">
                 <div class="rbt-lesson-toggle">
