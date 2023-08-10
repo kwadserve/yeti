@@ -25,7 +25,7 @@ Route::get('/', function () {
 //Authentication
 Route::get('/login', function () {
     return view('frontend.login');
-});
+})->name('login');
 
 Route::get('/register', function () {
     return view('frontend.register');
@@ -51,4 +51,10 @@ Route::middleware('auth')->group(function () {
         Route::post('/submit_quiz', 'submit_quiz');
     });
     Route::get('/logout', [AuthController::class, 'logout']);
+});
+
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin', function () {
+        return view('admin.user.list');
+    });
 });
