@@ -38,7 +38,14 @@
         }
     </style>
 </head>
-
+<?php
+$user =  Auth::user();
+$currentTest = App\Models\UserMeta::where('user_id', $user->id)->where('meta_key', 'current_test')->first();
+$videoList = App\Models\Video::where('test', (int)$currentTest->meta_value)->orderBy('serial', 'ASC')->get();
+$currentUrl = basename(request()->path());
+$currentVideoID = App\Models\UserMeta::where('user_id', $user->id)->where('meta_key', 'last_video')->first();
+$currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)->first();
+?>
 <body class="rbt-header-sticky">
 
     <div class="rbt-lesson-area bg-color-white">
@@ -54,52 +61,48 @@
                             <div class="accordion-item card">
                                 <h2 class="accordion-header card-header" id="headingTwo4">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#collapseTwo4" aria-controls="collapseTwo4">
-                                        Welcome Lessons <span class="rbt-badge-5 ml--10">1/3</span>
+                                        Test <span class="rbt-badge-5 ml--10">{{$currentTest->meta_value}}/3</span>
                                     </button>
                                 </h2>
-                                <div id="collapseTwo4" class="accordion-collapse collapse show" aria-labelledby="headingTwo4">
+                                <div id="collapseTwo4" class="accordion-collapse collapse {{$currentUrl === 'course' ? 'show' : ''}}" aria-labelledby="headingTwo4">
                                     <div class="accordion-body card-body">
                                         <ul class="rbt-course-main-content liststyle">
-
+                                            @if((int)$currentTest->meta_value = 1)
                                             <li>
-                                                <a href="lesson.html">
+                                                <a href="#">
                                                     <div class="course-content-left">
-                                                        <i class="feather-play-circle"></i> <span class="text">Hello World!
-                                        </span>
+                                                        <i class="feather-file-text"></i> <span class="text">Introduction</span>
                                                     </div>
                                                     <div class="course-content-right">
-                                                        <span class="min-lable">0.37</span>
                                                         <span class="rbt-check"><i class="feather-check"></i></span>
                                                     </div>
                                                 </a>
                                             </li>
-
+                                            @endif
+                                            @foreach($videoList as $video)
+                                            @php
+                                                $min = floor($video->duration/60);
+                                                $sec = $video->duration - $min*60;
+                                            @endphp
                                             <li>
                                                 <a href="#">
                                                     <div class="course-content-left">
-                                                        <i class="feather-play-circle"></i> <span class="text">Values and Variables</span>
+                                                        <i class="feather-play-circle"></i> 
+                                                        <span class="text">{{$video->video}}</span>
                                                     </div>
                                                     <div class="course-content-right">
-                                                        <span class="min-lable">20 min</span>
+                                                        <span class="min-lable">{{$min}}:{{$sec < 10 ? '0'.$sec : $sec}}</span>
+                                                        @if($video->serial < $currentVideo->serial)
+                                                        <span class="rbt-check"><i class="feather-check"></i></span>
+                                                        @elseif($currentUrl != 'course')
+                                                        <span class="rbt-check"><i class="feather-check"></i></span>
+                                                        @else
                                                         <span class="rbt-check unread"><i class="feather-circle"></i></span>
+                                                        @endif
                                                     </div>
                                                 </a>
                                             </li>
-
-                                            <li>
-                                                <a href="#">
-                                                    <div class="course-content-left">
-                                                        <i class="feather-play-circle"></i> <span class="text">Basic Operators
-                                        </span>
-                                                    </div>
-                                                    <div class="course-content-right">
-                                                        <span class="min-lable">15 min</span>
-                                                        <span class="rbt-check unread"><i class="feather-circle"></i></span>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-
+                                            @endforeach
                                         </ul>
                                     </div>
                                 </div>
@@ -107,25 +110,27 @@
 
                             <div class="accordion-item card">
                                 <h2 class="accordion-header card-header" id="headingTwo2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#collapseTwo2" aria-controls="collapseTwo2">
-                                        Quiz <span class="rbt-badge-5 ml--10">1/3</span>
+                                    <button class="accordion-button collapsed {{$currentUrl === 'quiz' ? 'show' : ''}} {{$currentUrl === 'result' ? 'show' : ''}}" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#collapseTwo2" aria-controls="collapseTwo2">
+                                        Quiz <span class="rbt-badge-5 ml--10">{{$currentTest->meta_value}}/3</span>
                                     </button>
                                 </h2>
                                 <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2">
                                     <div class="accordion-body card-body">
                                         <ul class="rbt-course-main-content liststyle">
                                             <li>
-                                                <a href="lesson-quiz.html">
+                                                <a href="#">
                                                     <div class="course-content-left">
                                                         <i class="feather-help-circle"></i> <span class="text">Questions</span>
                                                     </div>
                                                     <div class="course-content-right">
-                                                        <span class="rbt-check unread"><i class="feather-circle"></i></span>
+                                                        <span class="rbt-check {{$currentUrl === 'result' ? '' : 'unread'}}">
+                                                            <i class="feather-{{$currentUrl === 'result' ? 'check' : 'circle'}}"></i>
+                                                        </span>
                                                     </div>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="lesson-quiz-result.html">
+                                                <a href="#">
                                                     <div class="course-content-left">
                                                         <i class="feather-help-circle"></i> <span class="text">Result</span>
                                                     </div>

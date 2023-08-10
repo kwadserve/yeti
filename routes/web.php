@@ -58,3 +58,8 @@ Route::middleware(['auth', 'admin'])->group(function () {
         return view('admin.user.list');
     });
 });
+
+//404 
+Route::fallback(function () {
+    return view('404');
+});

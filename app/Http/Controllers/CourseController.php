@@ -24,12 +24,12 @@ class CourseController extends Controller
                 $nextVideoTime = UserMeta::where('user_id', $user->id)->where('meta_key', 'last_video_time')->update(['meta_value' => 0]);
                 $videoTime = UserMeta::where('user_id', $user->id)->where('meta_key', 'last_video_time')->first();
                 $lastVideo = UserMeta::where('user_id', $user->id)->where('meta_key', 'last_video')->update(['meta_value' => $video->id]);
-                return view('frontend.course.video', compact('videoTime', 'video'));
+                return view('frontend.course.video', compact('videoTime', 'video', 'test'));
             } else {
                 return redirect()->to('quiz');
             }            
         } else {
-            return view('frontend.course.video', compact('videoTime', 'video'));
+            return view('frontend.course.video', compact('videoTime', 'video', 'test'));
         }        
     }
 
