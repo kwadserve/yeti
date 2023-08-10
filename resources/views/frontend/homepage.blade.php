@@ -1,112 +1,6 @@
 @extends('frontend.layout')
 @section('content')
-    <!-- Start Side Vav -->
-    <div class="rbt-cart-side-menu">
-        <div class="inner-wrapper">
-            <div class="inner-top">
-                <div class="content">
-                    <div class="title">
-                        <h4 class="title mb--0">Your shopping cart</h4>
-                    </div>
-                    <div class="rbt-btn-close" id="btn_sideNavClose">
-                        <button class="minicart-close-button rbt-round-btn"><i class="feather-x"></i></button>
-                    </div>
-                </div>
-            </div>
-            <nav class="side-nav w-100">
-                <ul class="rbt-minicart-wrapper">
-                    <li class="minicart-item">
-                        <div class="thumbnail">
-                            <a href="#">
-                                <img src="assets/images/product/1.jpg" alt="Product Images">
-                            </a>
-                        </div>
-                        <div class="product-content">
-                            <h6 class="title"><a href="single-product.html">Miracle Morning</a></h6>
-
-                            <span class="quantity">1 * <span class="price">$22</span></span>
-                        </div>
-                        <div class="close-btn">
-                            <button class="rbt-round-btn"><i class="feather-x"></i></button>
-                        </div>
-                    </li>
-
-                    <li class="minicart-item">
-                        <div class="thumbnail">
-                            <a href="#">
-                                <img src="assets/images/product/7.jpg" alt="Product Images">
-                            </a>
-                        </div>
-                        <div class="product-content">
-                            <h6 class="title"><a href="single-product.html">Happy Strong</a></h6>
-
-                            <span class="quantity">1 * <span class="price">$30</span></span>
-                        </div>
-                        <div class="close-btn">
-                            <button class="rbt-round-btn"><i class="feather-x"></i></button>
-                        </div>
-                    </li>
-
-                    <li class="minicart-item">
-                        <div class="thumbnail">
-                            <a href="#">
-                                <img src="assets/images/product/3.jpg" alt="Product Images">
-                            </a>
-                        </div>
-                        <div class="product-content">
-                            <h6 class="title"><a href="single-product.html">Rich Dad Poor Dad</a></h6>
-
-                            <span class="quantity">1 * <span class="price">$50</span></span>
-                        </div>
-                        <div class="close-btn">
-                            <button class="rbt-round-btn"><i class="feather-x"></i></button>
-                        </div>
-                    </li>
-
-                    <li class="minicart-item">
-                        <div class="thumbnail">
-                            <a href="#">
-                                <img src="assets/images/product/4.jpg" alt="Product Images">
-                            </a>
-                        </div>
-                        <div class="product-content">
-                            <h6 class="title"><a href="single-product.html">Momentum Theorem</a></h6>
-
-                            <span class="quantity">1 * <span class="price">$50</span></span>
-                        </div>
-                        <div class="close-btn">
-                            <button class="rbt-round-btn"><i class="feather-x"></i></button>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="rbt-minicart-footer">
-                <hr class="mb--0">
-                <div class="rbt-cart-subttotal">
-                    <p class="subtotal"><strong>Subtotal:</strong></p>
-                    <p class="price">$121</p>
-                </div>
-                <hr class="mb--0">
-                <div class="rbt-minicart-bottom mt--20">
-                    <div class="view-cart-btn">
-                        <a class="rbt-btn btn-border icon-hover w-100 text-center" href="#">
-                            <span class="btn-text">View Cart</span>
-                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                        </a>
-                    </div>
-                    <div class="checkout-btn mt--20">
-                        <a class="rbt-btn btn-gradient icon-hover w-100 text-center" href="#">
-                            <span class="btn-text">Checkout</span>
-                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- End Side Vav -->
+   
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start Slider Area  -->
@@ -116,17 +10,17 @@
                 <div class="col-lg-10 offset-lg-1">
                     <div class="inner text-center ptb--80">
                         <div class="section-title">
-                            <span class="subtitle bg-primary-opacity">Hello! Web Development Course</span>
+                            <span class="subtitle bg-primary-opacity">Are you ready to be a</span>
                         </div>
-                        <h2 class="title theme-gradient rbt-display-1">A Complete Guide to Web Development.</h2>
+                        <h2 class="title theme-gradient rbt-display-1">YETI</h2>
 
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. perferendis, maiores?</p>
+                        <p class="description">Youth Electoral Trained Instructor?</p>
 
                         <div class="rbt-single-course-meta text-center mt--20">
                             <div class="enroll-btn mt--15">
                                 <a class="rbt-btn btn-gradient hover-icon-reverse" href="#">
                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Enrol Course Now</span>
+                                        <span class="btn-text">Register Now</span>
                                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
@@ -139,14 +33,14 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6 text-start">
 
                                     <ul class="rbt-meta">
-                                        <li class="color-primary"><i class="feather-book"></i>12 Lessons</li>
-                                        <li class="color-primary"><i class="feather-users"></i>50 Students</li>
+                                        <li class="color-primary"><i class="feather-book"></i>10 Lessons</li>
+                                        <li class="color-primary"><i class="feather-users"></i>500+ YETI's</li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 text-center">
                                     <div class="rbt-price large-size justify-content-start justify-content-lg-center">
-                                        <span class="current-price">$750.00</span>
-                                        <span class="off-price">$1500.00</span>
+                                        <span class="current-price">Free of Cost!</span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 text-end">
@@ -181,49 +75,28 @@
                     <div class="row row--30 gy-5 align-items-center">
                         <div class="col-lg-6 col-xl-5">
                             <div class="thumbnail rbt-shadow-box">
-                                <img class="w-100 radius-10" src="assets/images/course/course-single-01.jpg" alt="Card image">
+                                <img class="w-100 radius-10" src="assets/images/course/yeticourse.jpg" alt="Card image">
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-xl-7">
                             <div class="section-title">
                                 <h2 class="title">What you'll learn</h2>
-                                <p class="b1 mt--15">Far far away, behind the word mountains, far from the
-                                    countries Vokalia and Consonantia.</p>
+                                <p class="b1 mt--15">You are a  learning module away from making a difference in India’s youth vote. 
+By becoming a certified electoral instructor, you stand the chance to not only learn the precise way to register voters on the ECI’s platform, but also gain knowledge of the youth rights movement in India, its importance in the 21st century and learn to speak confidently of these to your peers!
+</p>
                             </div>
 
                             <div class="section-title subtitle">
-                                <h5 class="title">Whats Material Includes?</h5>
+                                <h5 class="title">Course Duration: 1 week to 1 month, dependent on your personal pace of learning and availability.</h5>
                             </div>
 
-                            <div class="row g-5">
-                                <!-- Start Feture Box  -->
-                                <div class="col-lg-6">
-                                    <ul class="rbt-list-style-1">
-                                        <li><i class="feather-check"></i>Become an advanced, confident.</li>
-                                        <li><i class="feather-check"></i>Have an intermediate skill.</li>
-                                        <li><i class="feather-check"></i>Have a portfolio of various.</li>
-                                        <li><i class="feather-check"></i>Have a portfolio of various.</li>
-                                        <li><i class="feather-check"></i>Use the numpy library to create.</li>
-                                    </ul>
-                                </div>
-                                <!-- End Feture Box  -->
-                                <!-- Start Feture Box  -->
-                                <div class="col-lg-6">
-                                    <ul class="rbt-list-style-1">
-                                        <li><i class="feather-check"></i>Use the Jupyter Notebook.</li>
-                                        <li><i class="feather-check"></i>Use the pandas module with.</li>
-                                        <li><i class="feather-check"></i>Have a portfolio of various.</li>
-                                        <li><i class="feather-check"></i>Have a portfolio of various.</li>
-                                        <li><i class="feather-check"></i>Create data visualizations.</li>
-                                    </ul>
-                                </div>
-                                <!-- End Feture Box  -->
-                            </div>
+                           
 
                             <div class="read-more-btn mt--40">
                                 <a class="rbt-moderbt-btn" href="#">
-                                    <span class="moderbt-btn-text">Learn More About Us</span>
+                                    <span class="moderbt-btn-text">Course registration starts: 12 August 2023, 1 p.m.</span>
+                                   
                                     <i class="feather-arrow-right"></i>
                                 </a>
                             </div>
@@ -242,7 +115,8 @@
                 <div class="col-lg-12">
                     <div class="inner">
                         <div class="section-title text-center mb--60">
-                            <h2 class="title color-white"><span class="theme-gradient">Complete guideline</span> from absolute <br /> beginners to getting hired.</h2>
+                            <h2 class="title color-white">Reimagining Facilitation in Youth Rights & Electoral Democracy
+</h2>
                             <div class="rbt-button-group mt--30">
                                 <a class="rbt-btn btn-gradient hover-icon-reverse" href="#">
                                     <span class="icon-reverse-wrapper">
@@ -254,7 +128,7 @@
 
                                 <a class="rbt-btn hover-icon-reverse btn-border color-white-off" href="#">
                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Hired List</span>
+                                        <span class="btn-text">Read Reviews</span>
                                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
@@ -272,16 +146,16 @@
                                             <img src="assets/images/course/single-course-02.jpg" alt="Image">
                                         </div>
                                         <div class="content">
-                                            <span class="rbt-badge-6 bg-secondary-opacity">Hello! Web Development Course</span>
-                                            <h2 class="title mt--10">Complete app development course with HiStudy</h2>
-                                            <p>The idea of establishing a private university to provide quality education at an affordable cost in Uk London.</p>
+                                            <span class="rbt-badge-6 bg-secondary-opacity">Excited to become a YETI?</span>
+                                            <h2 class="title mt--10">Make a difference in India’s youth vote</h2>
+                                            <p>Young India Foundation welcomes you to its first one of kind free course to becoming training facilitators on Youth Rights & Electoral Democracy. We believe that young people have the ability to play a larger role through civic participation and bringing forth change through their actions. </p>
                                             <ul class="course-feature-list">
                                                 <li>
                                                     <div class="icon">
                                                         <img src="assets/images/icons/card-icon-1.png" alt="Image Icon">
                                                     </div>
                                                     <div class="feature-content">
-                                                        <h4 class="featute-title">300K+ <span>Got Hired</span></h4>
+                                                        <h4 class="featute-title">300+ <span>YETI Members</span></h4>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -297,7 +171,7 @@
                                                         <img src="assets/images/icons/card-icon-2.png" alt="Image Icon">
                                                     </div>
                                                     <div class="feature-content">
-                                                        <h4 class="featute-title">300K+ <span>Month Required</span></h4>
+                                                        <h4 class="featute-title">30+ <span>Events Hosted</span></h4>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -312,11 +186,11 @@
                                 <div class="modern-course-features-box one-colume-grid h-100">
                                     <div class="inner">
                                         <div class="thumbnail">
-                                            <img src="assets/images/course/single-course-06.jpg" alt="Image">
+                                            <img src="assets/images/course/yeticertificate.svg" alt="Image">
                                         </div>
                                         <div class="content">
                                             <h2 class="title">Get a Certificate</h2>
-                                            <p>Apply for Admission in Post Graduate Diploma. Application Deadline: 26th September year Undergraduate.</p>
+                                            <p>Course Duration: 1 week to 1 month, dependent on your personal pace of learning and availability. Course registration starts: 12 August 2023, 1 p.m.</p>
                                             <ul class="course-feature-list">
                                                 <li>
                                                     <div class="icon">
@@ -382,14 +256,14 @@
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h2 class="title">Projects You Will Build</h2>
+                                            <h2 class="title">On your journey to be a YETI you will learn:</h2>
                                             <p>Apply for Admission in Post Graduate Diploma. Application Deadline: 26th September year Undergraduate.</p>
                                             <ul class="rbt-list-style-2 flex-wrap">
-                                                <li><i class="feather-check"></i>Ecommerce Website</li>
-                                                <li><i class="feather-check"></i>Travel Agency</li>
-                                                <li><i class="feather-check"></i>Shopping Cart</li>
-                                                <li><i class="feather-check"></i>News Portal</li>
-                                                <li><i class="feather-check"></i>Education Management</li>
+                                                <li><i class="feather-check"></i>A crash course on Youth Rights in India that will showcase the modern and current scenario of the youth in the nation as well as the lack of representation.</li>
+                                                <li><i class="feather-check"></i>The process of how to register yourself and your peers to vote.  Updates on all the changes around the electoral process</li>
+                                                <li><i class="feather-check"></i>How to hold engaging conversations on the participation of youth and ways that young people can hold such spaces around them which are inclusive and diverse</li>
+                                                <li><i class="feather-check"></i>What civic engagement means for young India, how we can create platforms for  engagement </li>
+                                                
                                             </ul>
                                         </div>
                                     </div>
@@ -412,15 +286,14 @@
             <div class="row align-items-end mb--60">
                 <div class="col-lg-6 col-md-6">
                     <div class="section-title text-start">
-                        <h2 class="title">Course Content</h2>
-                        <p class="description has-small-font-size mt--10">32 sections • 376 lectures • 27h 8m total
-                            length</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="expend-button text-start text-md-end">
-                        <a class="rbt-btn-link w-700" href="#">Expand all sections<i
-                                class="feather-arrow-right"></i></a>
+                        <h2 class="title">Here’s how the course works - </h2>
+                        <p class="description has-small-font-size mt--10">
+                            <ul>
+                                <li>Watch our videos taught by young people like yourself who are passionate about civic engagement and youth rights</li>
+                                <li>Take 3 quizzes based on what you learn</li>
+                                <li>Post the quizzes, you will then interact with our team and become a certified YETI instructor</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -451,7 +324,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo1">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="true" aria-controls="collapseTwo1">
-                                            Intro to Course and Histudy
+                                            Being Young in India
                                         </button>
                                     </h2>
                                     <div id="collapseTwo1" class="accordion-collapse collapse show" aria-labelledby="headingTwo1" data-bs-parent="#accordionExampleb2">
@@ -461,36 +334,32 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">An introduction to YIF and why we started</span>
                                                         </div>
-                                                        <div class="course-content-right">
-                                                            <span class="rbt-badge bg-pink-opacity">30 min</span>
-                                                            <span class="rbt-badge bg-primary-opacity">Preview</span>
+                                                        <div class="course-content-right only-lock">
+                                                            <i class="feather-lock"></i>
                                                         </div>
+                                                        
                                                     </a></li>
 
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Watch
-                                                                Before
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">A brief overview of the current state of the youth in India</span>
                                                         </div>
-                                                        <div class="course-content-right">
-                                                            <span class="rbt-badge bg-pink-opacity">0.5 min</span>
-                                                            <span class="rbt-badge bg-primary-opacity">Preview</span>
+                                                        <div class="course-content-right only-lock">
+                                                            <i class="feather-lock"></i>
                                                         </div>
+                                                        
                                                     </a></li>
 
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">What is YETI?</span>
                                                         </div>
-                                                        <div class="course-content-right">
-                                                            <span class="rbt-badge bg-pink-opacity">0.5 min</span>
-                                                            <span class="rbt-badge bg-primary-opacity">Preview</span>
+                                                        <div class="course-content-right only-lock">
+                                                            <i class="feather-lock"></i>
                                                         </div>
+                                                        
                                                     </a></li>
 
                                             </ul>
@@ -501,7 +370,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo2">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                                            Course Fundamentals
+                                            The Demographic Dividend
                                         </button>
                                     </h2>
                                     <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExampleb2">
@@ -510,64 +379,13 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">A brief overview</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Why
-                                                                You Should Not Go To Education.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Ten
-                                                                Factors That
-                                                                Affect Education's
-                                                                Longevity.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
+                                               
                                             </ul>
                                         </div>
                                     </div>
@@ -576,7 +394,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo3">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
-                                            You can develop skill and setup
+                                            State of the Youth
                                         </button>
                                     </h2>
                                     <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExampleb2">
@@ -585,69 +403,13 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">How the Indian youth is doing</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Why
-                                                                You Should Not Go
-                                                                To
-                                                                Education.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Ten
-                                                                Factors That
-                                                                Affect Education's
-                                                                Longevity.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
+                                                
                                             </ul>
                                         </div>
                                     </div>
@@ -656,7 +418,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo4">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
-                                            15 Things To Know About Education?
+                                            Gerontocracy and Ageism
                                         </button>
                                     </h2>
                                     <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4" data-bs-parent="#accordionExampleb2">
@@ -665,69 +427,22 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">Terminology and definitions</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Applications in the Indian Polity</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Why
-                                                                You Should Not Go
-                                                                To
-                                                                Education.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Ten
-                                                                Factors That
-                                                                Affect Education's
-                                                                Longevity.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
+                                             
                                             </ul>
                                         </div>
                                     </div>
@@ -736,7 +451,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo5">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
-                                            Course Description
+                                            India’s Crisis of Political Representation
                                         </button>
                                     </h2>
                                     <div id="collapseTwo5" class="accordion-collapse collapse" aria-labelledby="headingTwo5" data-bs-parent="#accordionExampleb2">
@@ -745,7 +460,7 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">Lok Sabha/Rajya Sabha</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -753,61 +468,23 @@
                                                     </a></li>
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Youngest electorate – oldest parliament + LS have only been getting older</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Why
-                                                                You Should Not Go
-                                                                To
-                                                                Education.</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Comparison of average ages of India v/s the LS</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Ten
-                                                                Factors That
-                                                                Affect Education's
-                                                                Longevity.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
+                                               
                                             </ul>
                                         </div>
                                     </div>
@@ -816,7 +493,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo6">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo6" aria-expanded="false" aria-controls="collapseTwo6">
-                                            Route 53
+                                           #Why25
                                         </button>
                                     </h2>
                                     <div id="collapseTwo6" class="accordion-collapse collapse" aria-labelledby="headingTwo6" data-bs-parent="#accordionExampleb2">
@@ -825,7 +502,7 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">The Age of Candidacy (with world comparisons)</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -833,61 +510,16 @@
                                                     </a></li>
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Age and Experience</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
+                                                
 
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Why
-                                                                You Should Not Go
-                                                                To
-                                                                Education.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Ten
-                                                                Factors That
-                                                                Affect Education's
-                                                                Longevity.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
+                                               
                                             </ul>
                                         </div>
                                     </div>
@@ -896,7 +528,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo7">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo7" aria-expanded="false" aria-controls="collapseTwo7">
-                                            EC2 Instance Storage
+                                           Voting and Civic Engagement
                                         </button>
                                     </h2>
                                     <div id="collapseTwo7" class="accordion-collapse collapse" aria-labelledby="headingTwo7" data-bs-parent="#accordionExampleb2">
@@ -905,7 +537,7 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">India’s youth urban voter apathy</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -913,61 +545,34 @@
                                                     </a></li>
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Probable causes (moving as students, lack of info, etc.)</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
-                                                <li><a href="#">
+                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Why
-                                                                You Should Not Go
-                                                                To
-                                                                Education.</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">International Comparison</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
-                                                <li><a href="#">
+                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">2019 v/s the 90 million gap</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
+                                                    
+                                                
 
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Ten
-                                                                Factors That
-                                                                Affect Education's
-                                                                Longevity.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -976,7 +581,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo8">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo8" aria-expanded="false" aria-controls="collapseTwo8">
-                                            IAM & AWS CLI
+                                            The Student Vote
                                         </button>
                                     </h2>
                                     <div id="collapseTwo8" class="accordion-collapse collapse" aria-labelledby="headingTwo8" data-bs-parent="#accordionExampleb2">
@@ -985,7 +590,7 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">Example of DU + Darsh’s video</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -993,61 +598,15 @@
                                                     </a></li>
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Polling booths in colleges and universities</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Why
-                                                                You Should Not Go
-                                                                To
-                                                                Education.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Ten
-                                                                Factors That
-                                                                Affect Education's
-                                                                Longevity.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
+                                                
+                                               
                                             </ul>
                                         </div>
                                     </div>
@@ -1056,7 +615,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo9">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo9" aria-expanded="false" aria-controls="collapseTwo9">
-                                            Getting started with AWS
+                                            The First Step - #GetInked 
                                         </button>
                                     </h2>
                                     <div id="collapseTwo9" class="accordion-collapse collapse" aria-labelledby="headingTwo9" data-bs-parent="#accordionExampleb2">
@@ -1065,7 +624,7 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">An EPIC</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -1073,61 +632,35 @@
                                                     </a></li>
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Voter Portal + Voter registration</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Why
-                                                                You Should Not Go
-                                                                To
-                                                                Education.</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Follow-ups + checking your BLO/next election</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Are you a student/young professional? Re-registration form</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
+                                               
 
 
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Ten
-                                                                Factors That
-                                                                Affect Education's
-                                                                Longevity.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
+                                               
                                             </ul>
                                         </div>
                                     </div>
@@ -1136,7 +669,7 @@
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo10">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo10" aria-expanded="false" aria-controls="collapseTwo10">
-                                            EC2 Fundamentals
+                                            Getting out there!
                                         </button>
                                     </h2>
                                     <div id="collapseTwo10" class="accordion-collapse collapse" aria-labelledby="headingTwo10" data-bs-parent="#accordionExampleb2">
@@ -1145,7 +678,7 @@
                                                 <li><a href="#">
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Course Intro</span>
+                                                                class="text">How to: have that conversation - Do’s and Don'ts</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -1153,61 +686,26 @@
                                                     </a></li>
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Community engagement + ideas to implement locally</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
                                                 <li><a href="#">
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Why
-                                                                You Should Not Go
-                                                                To
-                                                                Education.</span>
+                                                            <i class="feather-play-circle"></i> <span
+                                                                class="text">Joining YIF events</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
+                                               
 
 
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">Ten
-                                                                Factors That
-                                                                Affect Education's
-                                                                Longevity.</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-
-                                                <li><a href="#">
-                                                        <div class="course-content-left">
-                                                            <i class="feather-file-text"></i> <span class="text">Read
-                                                                Before You
-                                                                Start</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
+                                               
                                             </ul>
                                         </div>
                                     </div>
@@ -1679,118 +1177,7 @@
     </div>
     <!-- End Testimonial Area  -->
 
-    <!-- Start Pricing Area  -->
-    <div class="rbt-pricing-area bg-color-white rbt-section-gapBottom">
-        <div class="container">
-            <div class="row g-5 mb--60">
-                <div class="col-lg-12">
-                    <div class="section-title text-center">
-                        <h2 class="title">Plans For This Course</h2>
-                        <p class="description mt--20">See this our three main plans for our histudy courses. It starts
-                            from here! You can teach yourself what you really like.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8 offset-lg-2">
-                <div class="advance-pricing">
-                    <div class="inner">
-                        <div class="row row--0">
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="pricing-left">
-                                    <h3 class="main-title">Active Plan Mode.</h3>
-                                    <p class="description">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Nemo, quisquam.</p>
-                                    <div class="price-wrapper">
-                                        <span class="price-amount">$129<sup>/mo</sup></span>
-                                    </div>
-                                    <div class="pricing-btn-group">
-                                        <button class="rbt-btn btn-gradient w-100">Purchase Now</button>
-                                        <button class="rbt-btn btn-border w-100">Upgrade</button>
-                                    </div>
-                                    <div class="rating">
-                                        <a href="#rating">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                            </svg>
-                                        </a>
-                                        <a href="#rating">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                            </svg>
-                                        </a>
-                                        <a href="#rating">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                            </svg>
-                                        </a>
-                                        <a href="#rating">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                            </svg>
-                                        </a>
-                                        <a href="#rating">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <small class="subtitle">rated 4.5/5 Stars in 1000+ reviews.</small>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-12">
-                                <div class="pricing-right position-relative">
-                                    <div class="pricing-offer">
-                                        <div class="single-list">
-                                            <h4 class="price-title">Advance Plans You can Get.</h4>
-                                            <ul class="plan-offer-list">
-                                                <li>
-                                                    <i class="feather-check"></i> 5 PPC Campaigns
-                                                </li>
-                                                <li>
-                                                    <i class="feather-check"></i> Digital Marketing
-                                                </li>
-                                                <li>
-                                                    <i class="feather-check"></i> Marketing Agency
-                                                </li>
-                                                <li>
-                                                    <i class="feather-check"></i> Seo Friendly
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="single-list mt--40">
-                                            <h4 class="price-title">Basic Plans You can Get.</h4>
-                                            <ul class="plan-offer-list">
-                                                <li>
-                                                    <i class="feather-check"></i> 5 PPC Campaigns
-                                                </li>
-                                                <li>
-                                                    <i class="feather-check"></i> Digital Marketing
-                                                </li>
-                                                <li>
-                                                    <i class="feather-check"></i> Marketing Agency
-                                                </li>
-                                                <li>
-                                                    <i class="feather-check"></i> Seo Friendly
-                                                </li>
-                                                <li>
-                                                    <i class="feather-check"></i> App Development
-                                                </li>
-                                                <li class="off">
-                                                    <i class="feather-x"></i> 24/7 Dedicated Support
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pricing-badge"><span>Popular</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Pricing Area  -->
+    
 
     <!-- Start Author Area  -->
     <div class="rbt-author-area bg-gradient-8 rbt-section-gap">
@@ -1808,7 +1195,7 @@
                         <div class="col-lg-5">
                             <div class="media-body ml--15">
                                 <div class="author-info text-left">
-                                    <h2 class="title color-white mb--0">John Due</h2>
+                                    <h2 class="title color-white mb--0">Author Name</h2>
                                     <span class="b3 color-white">Advanced Educator</span>
                                 </div>
                                 <div class="content mt--20">
@@ -1853,7 +1240,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
-                        <h2 class="title">Want to get special offers <br /> and Course updates?</h2>
+                        <h2 class="title">Want to get Course updates?</h2>
                         <form action="#" class="newsletter-form-1 mt--50 radius-round">
                             <input class="rbt-border" type="email" placeholder="Enter Your E-Email">
                             <button type="submit" class="rbt-btn btn-md btn-gradient hover-icon-reverse radius-round">

@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Single Course - Online Courses & Education Bootstrap5 Template</title>
+        <title>YIF | Youth Electoral Trained Instructor</title>
         <meta name="robots" content="noindex, follow" />
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="{{url('assets/images/favicon.png')}}">
+        <link rel="shortcut icon" type="image/x-icon" href="{{url('assets/images/faviconyif.png')}}">
 
         <!-- CSS
         ============================================ -->
@@ -36,14 +36,14 @@
         <!-- Start Header Area -->
         <header class="rbt-header rbt-header-10 rbt-transparent-header">
             <div class="rbt-sticky-placeholder"></div>
-            <div class="rbt-header-wrapper  header-not-transparent header-sticky">
+            <div class="rbt-header-wrapper pt-4 pb-4 header-not-transparent header-sticky">
                 <div class="container">
                     <div class="mainbar-row rbt-navigation-center align-items-center">
                         <div class="header-left rbt-header-content">
                             <div class="header-info">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="assets/images/logo/logo.png" alt="Education Logo Images">
+                                        <img src="assets/images/yiflogodark.png" alt="YIF Logo">
                                     </a>
                                 </div>
                             </div>
@@ -219,7 +219,7 @@
                             <div class="footer-widget">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="assets/images/logo/logo.png" alt="Edu-cause">
+                                        <img src="assets/images/yiflogodark.png" alt="yif logo">
                                     </a>
                                 </div>
 
@@ -244,43 +244,30 @@
                                 <h5 class="ft-title">Useful Links</h5>
                                 <ul class="ft-link">
                                     <li>
-                                        <a href="12-marketplace.html">Marketplace</a>
+                                        <a href="12-marketplace.html">FAQ's</a>
                                     </li>
                                     <li>
-                                        <a href="04-kindergarten.html">kindergarten</a>
+                                        <a href="04-kindergarten.html">Events</a>
                                     </li>
                                     <li>
-                                        <a href="13-university-classic.html">University</a>
+                                        <a href="13-university-classic.html">YIF News</a>
                                     </li>
-                                    <li>
-                                        <a href="09-gym-coaching.html">GYM Coaching</a>
-                                    </li>
-                                    <li>
-                                        <a href="faqs.html">FAQ</a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>
 
                         <div class="col-lg-2 col-md-6 col-sm-6 col-12 mt--30">
                             <div class="footer-widget">
-                                <h5 class="ft-title">Our Company</h5>
+                                <h5 class="ft-title">Legal</h5>
                                 <ul class="ft-link">
                                     <li>
-                                        <a href="contact.html">Contact Us</a>
+                                        <a href="contact.html">Terms</a>
                                     </li>
                                     <li>
-                                        <a href="become-a-teacher.html">Become Teacher</a>
+                                        <a href="become-a-teacher.html">Privacy Policy</a>
                                     </li>
-                                    <li>
-                                        <a href="blog.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="instructor.html">Instructor</a>
-                                    </li>
-                                    <li>
-                                        <a href="event-list.html">Events</a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>
@@ -328,7 +315,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                        <p class="rbt-link-hover text-center text-lg-start">Copyright © 2023 <a href="https://themeforest.net/user/rbt-themes">KWAD</a> All Rights Reserved</p>
+                        <p class="rbt-link-hover text-center text-lg-start">Copyright © 2023 <a href="https://youngindia.foundation">Young India Foundation</a> All Rights Reserved | Designed by <a href="http://kwad.in">Kwad</a></p>
                     </div>
                 </div>
             </div>
