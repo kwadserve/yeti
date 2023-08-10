@@ -1463,7 +1463,7 @@ ul.rbt-dropdown-menu li .sub-menu li a, ul.rbt-dropdown-menu li a .right-icon, u
     Background Opacity With Text Colors  
 ---------------------------------------*/
 .bg-primary-opacity {
-  background: var(--primary-opacity) !important;
+  background: #ffffffeb !important;
   color: var(--color-primary) !important;
 }
 
@@ -24569,7 +24569,7 @@ blockquote.has-text-align-right cite,
 }
 
 .rbt-display-1 {
-  font-size: 80px !important;
+  font-size: 180px !important;
   line-height: 1.1 !important;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -29229,3 +29229,14 @@ Course Sidebar
     text-indent: -1em;
 }
 
+.yetibg {
+    background-image: url(../images/yetibg.png)!important;
+        background-position: bottom!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+
+.bannerfit {
+    padding-bottom:60px;
+    margin-bottom:5rem;
+}

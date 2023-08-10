@@ -4,7 +4,7 @@
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start Slider Area  -->
-    <div class="slider-area rbt-banner-9 bg-gradient-2 header-transperent-spacer">
+    <div class="slider-area yetibg bannerfit rbt-banner-9 bg-gradient-2 header-transperent-spacer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
@@ -88,14 +88,15 @@ By becoming a certified electoral instructor, you stand the chance to not only l
                             </div>
 
                             <div class="section-title subtitle">
-                                <h5 class="title">Course Duration: 1 week to 1 month, dependent on your personal pace of learning and availability.</h5>
+                                <h5 class="title">This online course named is offered solely online by Young India Foundation's Centre for Youth Policy, but is not equivalent to an on-campus course. 
+It does not confer a University grade, course credits or a degree, and does not hold and/or guarantee affiliation of the recipient with the Election Commission of India</h5>
                             </div>
 
                            
 
                             <div class="read-more-btn mt--40">
                                 <a class="rbt-moderbt-btn" href="#">
-                                    <span class="moderbt-btn-text">Course registration starts: 12 August 2023, 1 p.m.</span>
+                                    <span class="moderbt-btn-text">Register Now</span>
                                    
                                     <i class="feather-arrow-right"></i>
                                 </a>
@@ -143,7 +144,7 @@ By becoming a certified electoral instructor, you stand the chance to not only l
                                 <div class="modern-course-features-box h-100">
                                     <div class="inner">
                                         <div class="thumbnail">
-                                            <img src="assets/images/course/single-course-02.jpg" alt="Image">
+                                            <img src="assets/images/yetione.jpeg" alt="Image">
                                         </div>
                                         <div class="content">
                                             <span class="rbt-badge-6 bg-secondary-opacity">Excited to become a YETI?</span>
@@ -224,17 +225,17 @@ By becoming a certified electoral instructor, you stand the chance to not only l
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
                                                         <div class="thumbnail mt--0">
-                                                            <img src="assets/images/course/single-course-07.jpg" alt="Image">
+                                                            <img src="assets/images/yeti4.jpg" alt="Image">
                                                         </div>
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <div class="thumbnail mt--0">
-                                                            <img src="assets/images/course/single-course-08.jpg" alt="Image">
+                                                            <img src="assets/images/yeti3.jpg" alt="Image">
                                                         </div>
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <div class="thumbnail mt--0">
-                                                            <img src="assets/images/course/single-course-09.jpg" alt="Image">
+                                                            <img src="assets/images/yeti2.jpg" alt="Image">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1179,60 +1180,7 @@ By becoming a certified electoral instructor, you stand the chance to not only l
 
     
 
-    <!-- Start Author Area  -->
-    <div class="rbt-author-area bg-gradient-8 rbt-section-gap">
-        <div class="container">
-            <div class="rbt-instructor">
-                <div class="single-course-author">
-                    <div class="media row align-items-center g-5">
-                        <div class="col-lg-3 col-xl-3 offset-xl-2">
-                            <div class="thumbnail">
-                                <a href="#">
-                                    <img class="radius-10 w-100" src="assets/images/team/team-08.jpg" alt="Author Images">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="media-body ml--15">
-                                <div class="author-info text-left">
-                                    <h2 class="title color-white mb--0">Author Name</h2>
-                                    <span class="b3 color-white">Advanced Educator</span>
-                                </div>
-                                <div class="content mt--20">
-                                    <p class="description color-white">John is a brilliant educator, whose life was
-                                        spent
-                                        for computer science and love of nature. Being a female, she encountered
-                                        a lot of obstacles and was forbidden to work in this field by her
-                                        family. With a true spirit and talented gift, she was able to succeed
-                                        and set an example for others.</p>
-                                    <ul class="social-icon color-white social-default transparent-with-border justify-content-start mt--15">
-                                        <li><a href="https://www.facebook.com/">
-                                                <i class="feather-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li><a href="https://www.twitter.com/">
-                                                <i class="feather-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/">
-                                                <i class="feather-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li><a href="https://www.linkdin.com/">
-                                                <i class="feather-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Author Area  -->
+    
 
     <!-- Start Newsletter Area  -->
     <div class="rbt-newsletter-area bg-color-white rbt-section-gap">
