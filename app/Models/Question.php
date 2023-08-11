@@ -11,5 +11,5 @@ class Question extends Model
 
     public $timestamps = false;
     protected $table = 'questions';
-    protected $fillable = ['question', 'option_a', 'option_b', 'option_c', 'option_d', 'answer', 'test'];
+    protected $fillable = ['question', 'option_a', 'option_b', 'option_c', 'option_d', 'answer', 'test', 'serial'];
 }
