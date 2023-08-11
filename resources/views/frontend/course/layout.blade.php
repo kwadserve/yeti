@@ -52,7 +52,7 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
     <div class="rbt-lesson-area bg-color-white">
         <div class="rbt-lesson-content-wrapper">
             <div class="rbt-lesson-leftsidebar">
-                <div class="rbt-course-feature-inner rbt-search-activation">
+                <div class="rbt-course-feature-inner rbt-search-activation rbt-scroll-max-height rbt-scroll">
                     <div class="section-title">
                         <h4 class="rbt-title-style-3">Course Content</h4>
                     </div>
