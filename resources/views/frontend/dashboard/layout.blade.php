@@ -23,8 +23,8 @@
                             <div class="tutor-content">
                                 <h5 class="title">{{$user->name}}</h5>
                                 <ul class="rbt-meta rbt-meta-white mt--5">
-                                    <li><i class="feather-book"></i>5 Courses Enroled</li>
-                                    <li><i class="feather-award"></i>4 Certificate</li>
+                                    <li><i class="feather-book"></i>1 Course Enroled</li>
+                                    <li><i class="feather-award"></i>0 Courses Completed</li>
                                 </ul>
                             </div>
                         </div>
@@ -32,12 +32,13 @@
                             <div class="tutor-btn">
                                 <a class="rbt-btn btn-md hover-icon-reverse" href="#">
                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Become an Instructor</span>
+                                        <span class="btn-text">Resume Course</span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                         <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
                                 </a>
                             </div>
+                            
                         </div>
                     </div>
                     <!-- End Tutor Information  -->
@@ -53,13 +54,13 @@
 
                                     <div class="rbt-default-sidebar-wrapper">
                                         <div class="section-title mb--20">
-                                            <h6 class="rbt-title-style-2">Welcome, {{$user->name}}</h6>
+                                            <h6 class="rbt-title-style-2">Welcome {{$user->name}},</h6>
                                         </div>
                                         <nav class="mainmenu-nav">
                                             <ul class="dashboard-mainmenu rbt-default-sidebar-list">
                                                 <li><a href="{{url('dashboard')}}"><i class="feather-home"></i><span>Dashboard</span></a></li>
                                                 <li><a href="{{url('profile')}}"><i class="feather-user"></i><span>My Profile</span></a></li>
-                                                <li><a href="{{url('quiz-attempts')}}"><i class="feather-help-circle"></i><span>My Quiz Attempts</span></a></li>
+                                                <li><a href="{{url('quiz-attempts')}}"><i class="feather-download"></i><span>Download Certificate</span></a></li>
                                             </ul>
                                         </nav>
 

@@ -140,9 +140,9 @@
   --color-light: #F5F7FA;
   --color-lighter: #F2F5F9;
   --primary-opacity: #00000012;
-  --secondary-opacity: #57ef1f21;
+  --secondary-opacity: #599f533b;
   --coral-opacity: #E9967A21;
-  --violet-opacity: #80008021;
+  --violet-opacity: #d4642b66;
   --pink-opacity: #DB709321;
   --white-opacity: #ffffff21;
   --danger-opacity: #FF000310;
@@ -8759,7 +8759,7 @@ hr {
 }
 
 .bg_image--23 {
-  background-image: url(../images/bg/bg-image-23.jpg);
+  background-image: url(../images/bg/profilebanner.png);
 }
 
 .bg_image--24 {

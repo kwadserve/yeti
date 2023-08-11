@@ -10,7 +10,7 @@
         </div>
         <div class="lesson-top-right">
             <div class="rbt-btn-close">
-                <a href="course-details.html" title="Go Back to Course" class="rbt-round-btn"><i class="feather-x"></i></a>
+                <a href="{{url('profile')}}" title="Go Back to Dashboard" class="rbt-round-btn"><i class="feather-x"></i></a>
             </div>
         </div>
     </div>
