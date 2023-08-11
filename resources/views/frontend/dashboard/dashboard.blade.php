@@ -10,15 +10,15 @@
 
             <!-- Start Single Card  -->
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="rbt-counterup variation-01 rbt-hover-03 rbt-border-dashed bg-primary-opacity">
+                <div class="rbt-counterup variation-01 rbt-hover-03 rbt-border-dashed bg-violet-opacity">
                     <div class="inner">
-                        <div class="rbt-round-icon bg-primary-opacity">
+                        <div class="rbt-round-icon bg-violet-opacity color-primary">
                             <i class="feather-book-open"></i>
                         </div>
                         <div class="content">
-                            <h3 class="counter without-icon color-primary"><span class="odometer" data-count="30">00</span>
+                            <h3 class="counter without-icon color-primary"><span class="odometer" data-count="1">00</span>
                             </h3>
-                            <span class="rbt-title-style-2 d-block">Enrolled Courses</span>
+                            <span class="rbt-title-style-2 d-block color-primary">Enrolled Courses</span>
                         </div>
                     </div>
                 </div>
@@ -27,13 +27,13 @@
 
             <!-- Start Single Card  -->
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="rbt-counterup variation-01 rbt-hover-03 rbt-border-dashed bg-secondary-opacity">
+                <div class="rbt-counterup variation-01 rbt-hover-03 rbt-border-dashed bg-primary-opacity">
                     <div class="inner">
-                        <div class="rbt-round-icon bg-secondary-opacity">
+                        <div class="rbt-round-icon bg-primary-opacity">
                             <i class="feather-monitor"></i>
                         </div>
                         <div class="content">
-                            <h3 class="counter without-icon color-secondary"><span class="odometer" data-count="10">00</span>
+                            <h3 class="counter without-icon color-primary"><span class="odometer" data-count="1"></span>
                             </h3>
                             <span class="rbt-title-style-2 d-block">ACTIVE COURSES</span>
                         </div>
@@ -45,13 +45,13 @@
 
             <!-- Start Single Card  -->
             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                <div class="rbt-counterup variation-01 rbt-hover-03 rbt-border-dashed bg-violet-opacity">
+                <div class="rbt-counterup variation-01 rbt-hover-03 rbt-border-dashed bg-secondary-opacity">
                     <div class="inner">
-                        <div class="rbt-round-icon bg-violet-opacity">
+                        <div class="rbt-round-icon bg-secondary-opacity">
                             <i class="feather-award"></i>
                         </div>
                         <div class="content">
-                            <h3 class="counter without-icon color-violet"><span class="odometer" data-count="7">00</span>
+                            <h3 class="counter without-icon color-secondary"><span class="odometer" data-count="0">00</span>
                             </h3>
                             <span class="rbt-title-style-2 d-block">Completed Courses</span>
                         </div>

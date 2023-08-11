@@ -2,7 +2,10 @@
 @section('content')    
     <div class="rbt-elements-area bg-color-white rbt-section-gap">
         <div class="container">
-            <div class="row gy-5 row--30">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="row gy-5 row--30">
                 <div class="rbt-contact-form contact-form-style-1 max-width-auto">
                     <h3 class="title">Login</h3>
                     <form class="max-width-auto" method="POST" action="{{url('login')}}">
@@ -36,7 +39,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="rbt-lost-password text-end">
-                                    <a class="rbt-btn-link" href="#">Lost your password?</a>
+                                    <a class="rbt-btn-link" href="#">Lost your password?</a><br> <a class="rbt-btn-link" href="{{url('register')}}">Dont have an account? Create Now.</a>
                                 </div>
                             </div>
                         </div>
@@ -53,6 +56,9 @@
                     </form>
                 </div>
             </div>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>    
         </div>
     </div>  
     <script>

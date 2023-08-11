@@ -1,5 +1,6 @@
 @extends('frontend.layout')
 @section('content')
+
    
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
@@ -17,8 +18,9 @@
                         <p class="description">Youth Electoral Trained Instructor?</p>
 
                         <div class="rbt-single-course-meta text-center mt--20">
+                            @guest
                             <div class="enroll-btn mt--15">
-                                <a class="rbt-btn btn-gradient hover-icon-reverse" href="#">
+                                <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{url('register')}}">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Register Now</span>
                                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
@@ -26,6 +28,18 @@
                                     </span>
                                 </a>
                             </div>
+                            @else
+                            <div class="enroll-btn mt--15">
+                                <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{url('profile')}}">
+                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">View Dashboard</span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    </span>
+                                </a>
+                            </div>
+                            @endguest
+                            
                         </div>
 
                         <div class="rbt-course-block mt--50 rbt-course-block rbt-shadow-box position-relative bg-primary-opacity">
@@ -82,14 +96,19 @@
                         <div class="col-lg-6 col-xl-7">
                             <div class="section-title">
                                 <h2 class="title">What you'll learn</h2>
-                                <p class="b1 mt--15">You are a  learning module away from making a difference in India’s youth vote. 
-By becoming a certified electoral instructor, you stand the chance to not only learn the precise way to register voters on the ECI’s platform, but also gain knowledge of the youth rights movement in India, its importance in the 21st century and learn to speak confidently of these to your peers!
+                                <p class="b3 mt--15">You are a learning module away from making a difference in India’s youth vote. By becoming a certified electoral instructor, you stand the chance to not only learn the precise way to register voters on the ECI’s platform, but also gain knowledge of the youth rights movement in India, its importance in the 21st century and learn to speak confidently of these to your peers!
+                                
+                                <br><br>
+
+Make a difference in India’s youth vote
+Young India Foundation welcomes you to its first one of kind free course to becoming training facilitators on Youth Rights & Electoral Democracy. We believe that young people have the ability to play a larger role through civic participation and bringing forth change through their actions.
+
 </p>
                             </div>
 
-                            <div class="section-title subtitle">
-                                <h5 class="title">This online course named is offered solely online by Young India Foundation's Centre for Youth Policy, but is not equivalent to an on-campus course. 
-It does not confer a University grade, course credits or a degree, and does not hold and/or guarantee affiliation of the recipient with the Election Commission of India</h5>
+                            <div class="b3 section-title subtitle">
+                                <h6 class="title">This online course named is offered solely online by Young India Foundation's Centre for Youth Policy, but is not equivalent to an on-campus course. 
+It does not confer a University grade, course credits or a degree, and does not hold and/or guarantee affiliation of the recipient with the Election Commission of India</h6>
                             </div>
 
                            
@@ -119,7 +138,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                             <h2 class="title color-white">Reimagining Facilitation in Youth Rights & Electoral Democracy
 </h2>
                             <div class="rbt-button-group mt--30">
-                                <a class="rbt-btn btn-gradient hover-icon-reverse" href="#">
+                                <a class="rbt-btn btn-gradient hover-icon-reverse" href="#expcourse">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Explore Course</span>
                                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
@@ -127,7 +146,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                     </span>
                                 </a>
 
-                                <a class="rbt-btn hover-icon-reverse btn-border color-white-off" href="#">
+                                <a class="rbt-btn hover-icon-reverse btn-border color-white-off" href="#reviews">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Read Reviews</span>
                                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
@@ -191,7 +210,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                         </div>
                                         <div class="content">
                                             <h2 class="title">Get a Certificate</h2>
-                                            <p>Course Duration: 1 week to 1 month, dependent on your personal pace of learning and availability. Course registration starts: 12 August 2023, 1 p.m.</p>
+                                            <p>Course Duration: 1 week to 1 month, dependent on your personal pace of learning and availability.<br>Course registration starts: 12 August 2023, 1 p.m.</p>
                                             <ul class="course-feature-list">
                                                 <li>
                                                     <div class="icon">
@@ -258,12 +277,12 @@ It does not confer a University grade, course credits or a degree, and does not 
                                         </div>
                                         <div class="content">
                                             <h2 class="title">On your journey to be a YETI you will learn:</h2>
-                                            <p>Apply for Admission in Post Graduate Diploma. Application Deadline: 26th September year Undergraduate.</p>
+                                            
                                             <ul class="rbt-list-style-2 flex-wrap">
                                                 <li><i class="feather-check"></i>A crash course on Youth Rights in India that will showcase the modern and current scenario of the youth in the nation as well as the lack of representation.</li>
-                                                <li><i class="feather-check"></i>The process of how to register yourself and your peers to vote.  Updates on all the changes around the electoral process</li>
+                                                <li><i class="feather-check"></i>The process of how to register yourself and your peers to vote and updates on all the changes around the electoral process</li>
                                                 <li><i class="feather-check"></i>How to hold engaging conversations on the participation of youth and ways that young people can hold such spaces around them which are inclusive and diverse</li>
-                                                <li><i class="feather-check"></i>What civic engagement means for young India, how we can create platforms for  engagement </li>
+                                                <li><i class="feather-check"></i>What civic engagement means for young India, how we can create platforms for engagement</li>
                                                 
                                             </ul>
                                         </div>
@@ -282,7 +301,7 @@ It does not confer a University grade, course credits or a degree, and does not 
 
 
     <!-- Start Course Content  -->
-    <div class="rbt-course-content rbt-section-gap bg-color-extra2">
+    <div id="expcourse" class="rbt-course-content rbt-section-gap bg-color-extra2">
         <div class="container">
             <div class="row align-items-end mb--60">
                 <div class="col-lg-6 col-md-6">
@@ -722,7 +741,7 @@ It does not confer a University grade, course credits or a degree, and does not 
 
 
     <!-- Start Testimonial Area  -->
-    <div class="rbt-testimonial-area bg-color-white rbt-section-gap overflow-hidden">
+    <div id="reviews" class="rbt-testimonial-area bg-color-white rbt-section-gap overflow-hidden">
         <div class="wrapper">
             <div class="container">
                 <div class="row">

@@ -6,7 +6,7 @@
             <div class="rbt-lesson-toggle">
                 <button class="lesson-toggle-active btn-round-white-opacity" title="Toggle Sidebar"><i class="feather-arrow-left"></i></button>
             </div>
-            <h5>The Complete Histudy 2023: From Zero to Expert!</h5>
+            <h5>Result</h5>
         </div>
         <div class="lesson-top-right">
             <div class="rbt-btn-close">

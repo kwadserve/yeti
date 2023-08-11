@@ -194,7 +194,7 @@
     
                 <div class="mobile-menu-bottom">
                     <div class="social-share-wrapper">
-                        <span class="rbt-short-title d-block">Find With Us</span>
+                        <span class="rbt-short-title d-block">Connect with us</span>
                         <ul class="social-icon social-default transparent-with-border justify-content-start mt--20">
                             <li><a href="https://www.facebook.com/youngindiafdn">
                                     <i class="feather-facebook"></i>
@@ -242,13 +242,13 @@
                                 <h5 class="ft-title">Useful Links</h5>
                                 <ul class="ft-link">
                                     <li>
-                                        <a href="12-marketplace.html">FAQ's</a>
+                                        <a href="#">FAQ's</a>
                                     </li>
                                     <li>
-                                        <a href="04-kindergarten.html">Events</a>
+                                        <a href="https://youngindians.vote/#scevents">Events</a>
                                     </li>
                                     <li>
-                                        <a href="13-university-classic.html">YIF News</a>
+                                        <a href="https://news.youngindia.foundation/">YIF News</a>
                                     </li>
                                    
                                 </ul>
