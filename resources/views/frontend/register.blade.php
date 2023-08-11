@@ -11,6 +11,9 @@
                             <input name="email" type="text" />
                             <label>Email *</label>
                             <span class="focus-border"></span>
+                            @error('email')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <div class="form-group">
@@ -26,12 +29,18 @@
                             </span>
                             <label>Password *</label>                            
                             <span class="focus-border"></span>
+                            @error('password')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <div class="form-group">
                             <input name="pin" type="text">
                             <label>PIN *</label>
                             <span class="focus-border"></span>
+                            @error('pin')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <div class="form-group">
@@ -77,6 +86,7 @@
             password.setAttribute("type", type);
             
             // toggle the icon
+            togglePassword.classList.toggle("feather-eye-off");
             togglePassword.classList.toggle("feather-eye");
         }
     </script>    

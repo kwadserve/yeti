@@ -42,8 +42,8 @@
                         <div class="header-left rbt-header-content">
                             <div class="header-info">
                                 <div class="logo">
-                                    <a href="index.html">
-                                        <img src="assets/images/yiflogodark.png" alt="YIF Logo">
+                                    <a href="{{url('/')}}">
+                                        <img src="{{url('assets/images/yiflogodark.png')}}" alt="YIF Logo">
                                     </a>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                                     </li>
                                 @else
                                 <li class="account-access rbt-user-wrapper d-none d-xl-block">
-                                    <a href="#"><i class="feather-user"></i>Admin</a>
+                                    <a href="#"><i class="feather-user"></i>{{strtok(Auth::user()->name, " ")}}</a>
                                     <div class="rbt-user-menu-list-wrapper">
                                         <div class="inner">
                                             <div class="rbt-admin-profile">
@@ -76,13 +76,13 @@
                                                     <img src="assets/images/team/avatar.jpg" alt="User Images">
                                                 </div>
                                                 <div class="admin-info">
-                                                    <span class="name">Nipa Bali</span>
-                                                    <a class="rbt-btn-link color-primary" href="profile.html">View Profile</a>
+                                                    <span class="name">{{Auth::user()->name}}</span>
+                                                    <a class="rbt-btn-link color-primary" href="{{url('profile')}}">View Profile</a>
                                                 </div>
                                             </div>
                                             <ul class="user-list-wrapper">
                                                 <li>
-                                                    <a href="instructor-dashboard.html">
+                                                    <a href="{{url('profile')}}">
                                                         <i class="feather-home"></i>
                                                         <span>My Dashboard</span>
                                                     </a>
@@ -110,13 +110,13 @@
                                                     <img src="assets/images/team/avatar.jpg" alt="User Images">
                                                 </div>
                                                 <div class="admin-info">
-                                                    <span class="name">Nipa Bali</span>
-                                                    <a class="rbt-btn-link color-primary" href="profile.html">View Profile</a>
+                                                    <span class="name">{{Auth::user()->name}}</span>
+                                                    <a class="rbt-btn-link color-primary" href="{{url('profile')}}">View Profile</a>
                                                 </div>
                                             </div>
                                             <ul class="user-list-wrapper">
                                                 <li>
-                                                    <a href="instructor-dashboard.html">
+                                                    <a href="{{url('profile')}}">
                                                         <i class="feather-home"></i>
                                                         <span>My Dashboard</span>
                                                     </a>
@@ -125,7 +125,7 @@
                                             <hr class="mt--10 mb--10">
                                             <ul class="user-list-wrapper">
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="{{url('logout')}}">
                                                         <i class="feather-log-out"></i>
                                                         <span>Logout</span>
                                                     </a>
@@ -166,15 +166,26 @@
                             <button class="close-button rbt-round-btn"><i class="feather-x"></i></button>
                         </div>
                     </div>
+                    @guest
                     <p class="description">ARE YOU READY TO BE A YETI?<br></p>
                     <ul class="navbar-top-left rbt-information-list justify-content-start">
                         <li>
-                            <a href="mailto:hello@example.com"><i class="feather-user"></i>Login</a>
+                            <a href="{{url('login')}}"><i class="feather-user"></i>Login</a>
                         </li>
                         <li>
-                            <a href="#"><i class="feather-book"></i>Register</a>
+                            <a href="{{url('register')}}"><i class="feather-book"></i>Register</a>
                         </li>
                     </ul>
+                    @else
+                    <p class="description">
+                        <i class="feather-user"></i>{{Auth::user()->name}}<br>
+                    </p>
+                    <ul class="navbar-top-left rbt-information-list justify-content-start">
+                        <li>
+                            <a href="{{url('course')}}">Course</a>
+                        </li>
+                    </ul>
+                    @endguest
                 </div>
     
                 <nav class="mainmenu-nav">
@@ -185,18 +196,18 @@
                     <div class="social-share-wrapper">
                         <span class="rbt-short-title d-block">Find With Us</span>
                         <ul class="social-icon social-default transparent-with-border justify-content-start mt--20">
-                           <li><a href="https://www.facebook.com/youngindiafdn">
-                                            <i class="feather-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li><a href="https://twitter.com/YoungIndiaFDN">
-                                            <i class="feather-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li><a href="https://www.instagram.com/youngindiafdn/">
-                                            <i class="feather-instagram"></i>
-                                        </a>
-                                    </li>
+                            <li><a href="https://www.facebook.com/youngindiafdn">
+                                    <i class="feather-facebook"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://twitter.com/YoungIndiaFDN">
+                                    <i class="feather-twitter"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://www.instagram.com/youngindiafdn/">
+                                    <i class="feather-instagram"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

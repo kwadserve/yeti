@@ -58,7 +58,7 @@
         <div class="inner">
             <div class="plyr__video-embed rbtplayer">
                 <video id="course_video" width="100%" controls controlsList="nodownload">
-                    <source src="{{url($video->location.'#t='.$videoTime->meta_value)}}" type="video/mp4">
+                    <source src="{{URL::asset('/'.$video->location.'#t='.$videoTime->meta_value)}}" type="video/mp4">
                     Your browser does not support HTML video.
                 </video>
             </div>

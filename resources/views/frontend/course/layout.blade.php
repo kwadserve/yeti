@@ -32,12 +32,17 @@
     <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/magnigy-popup.min.css')}}">
     <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/plyr.css')}}">
     <link rel="stylesheet" href="{{URL::asset('/assets/css/style.css')}}">
+    <style>
+        .rbt-accordion-style .card + .card {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <?php
 $user =  Auth::user();
 $currentTest = App\Models\UserMeta::where('user_id', $user->id)->where('meta_key', 'current_test')->first();
 $test = $currentTest->meta_value;
-$videoList = App\Models\Video::where('test', (int)$currentTest->meta_value)->orderBy('serial', 'ASC')->get();
+$videoList = App\Models\Video::orderBy('test', 'ASC')->orderBy('serial', 'ASC')->get();
 $currentUrl = basename(request()->path());
 $currentVideoID = App\Models\UserMeta::where('user_id', $user->id)->where('meta_key', 'last_video')->first();
 $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)->first();
@@ -54,55 +59,58 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
 
                     <div class="rbt-accordion-style rbt-accordion-02 for-right-content accordion">
                         <div class="accordion" id="accordionExampleb2">
+                            <div class="rbt-course-main-content liststyle">
+                                <h2 class="rbt-title-style-3">
+                                    <a href="#">
+                                        <div class="course-content-left">
+                                            <i class="feather-file-text"></i> <span class="text">Introduction</span>
+                                        </div>
+                                    </a>
+                                </h2>
+                            </div>
+                            @foreach($videoList as $video)
+                            @php
+                                $timeline = (array)json_decode($video->timeline);
+                            @endphp
                             <div class="accordion-item card">
                                 <h2 class="accordion-header card-header" id="headingTwo4">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#collapseTwo4" aria-controls="collapseTwo4">
-                                        Test <span class="rbt-badge-5 ml--10">{{$currentTest->meta_value}}/3</span>
+                                        {{$video->video}}
                                     </button>
                                 </h2>
                                 <div id="collapseTwo4" class="accordion-collapse collapse {{$currentUrl === 'course' ? 'show' : ''}}" aria-labelledby="headingTwo4">
                                     <div class="accordion-body card-body">
                                         <ul class="rbt-course-main-content liststyle">
-                                            @if((int)$currentTest->meta_value = 1)
-                                            <li>
-                                                <a href="#">
-                                                    <div class="course-content-left">
-                                                        <i class="feather-file-text"></i> <span class="text">Introduction</span>
-                                                    </div>
-                                                    <div class="course-content-right">
-                                                        <span class="rbt-check"><i class="feather-check"></i></span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            @endif
-                                            @foreach($videoList as $video)
+                                            @foreach($timeline as $tl)
                                             @php
-                                                $min = floor($video->duration/60);
-                                                $sec = $video->duration - $min*60;
+                                                $min = floor($tl->time/60);
+                                                $sec = $tl->time - $min*60;
                                             @endphp
                                             <li>
                                                 <a href="#">
                                                     <div class="course-content-left">
                                                         <i class="feather-play-circle"></i> 
-                                                        <span class="text">{{$video->video}}</span>
+                                                        <span class="text">{{$tl->info}}</span>
                                                     </div>
                                                     <div class="course-content-right">
                                                         <span class="min-lable">{{$min}}:{{$sec < 10 ? '0'.$sec : $sec}}</span>
-                                                        @if($video->serial < $currentVideo->serial)
-                                                        <span class="rbt-check"><i class="feather-check"></i></span>
-                                                        @elseif($currentUrl != 'course')
-                                                        <span class="rbt-check"><i class="feather-check"></i></span>
+                                                        @if($video->id === $currentVideo->id)
+                                                        <span class="rbt-check unread"><i class="feather-cirlce"></i></span>
+                                                        @elseif($video->test > $currentVideo->test)
+                                                        <span class="rbt-check unread"><i class="feather-lock"></i></span>
                                                         @else
-                                                        <span class="rbt-check unread"><i class="feather-circle"></i></span>
+                                                        <span class="rbt-check"><i class="feather-check"></i></span>
                                                         @endif
                                                     </div>
                                                 </a>
                                             </li>
+
                                             @endforeach
                                         </ul>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
 
                             <div class="accordion-item card">
                                 <h2 class="accordion-header card-header" id="headingTwo2">

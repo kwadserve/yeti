@@ -11,6 +11,9 @@
                             <input name="email" type="email" />
                             <label>Email *</label>
                             <span class="focus-border"></span>
+                            @error('email')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <span>
@@ -19,12 +22,15 @@
                             </span>
                             <label>Password *</label>
                             <span class="focus-border"></span>
+                            @error('password')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
 
                         <div class="row mb--30">
                             <div class="col-lg-6">
                                 <div class="rbt-checkbox">
-                                    <input type="checkbox" id="rememberme" name="rememberme">
+                                    <input type="checkbox" id="rememberme" name="remember_me">
                                     <label for="rememberme">Remember me</label>
                                 </div>
                             </div>
@@ -59,6 +65,7 @@
             password.setAttribute("type", type);
             
             // toggle the icon
+            togglePassword.classList.toggle("feather-eye-off");
             togglePassword.classList.toggle("feather-eye");
         }
     </script>  
