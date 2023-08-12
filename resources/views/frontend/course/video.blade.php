@@ -7,7 +7,7 @@
                 <div class="rbt-lesson-toggle">
                     <button class="lesson-toggle-active btn-round-white-opacity" title="Toggle Sidebar"><i class="feather-arrow-left"></i></button>
                 </div>
-                <h5>The Complete Histudy 2023: From Zero to Expert!</h5>
+                <h5>Introduction</h5>
             </div>
             <div class="lesson-top-right">
                 <div class="rbt-btn-close">
@@ -61,6 +61,7 @@
                     <source src="{{URL::asset('/'.$video->location.'#t='.$videoTime->meta_value)}}" type="video/mp4">
                     Your browser does not support HTML video.
                 </video>
+                {{-- <iframe src="https://www.youtube.com/watch?v=tXWebwlfqfc&t=20" width="100%" height="100%"></iframe> --}}
             </div>
             <div class="content">
                 <div class="section-title">

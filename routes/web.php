@@ -39,7 +39,7 @@ Route::controller(AuthController::class)->group(function () {
 Route::middleware('auth')->group(function () {
     Route::controller(UserController::class)->group(function () {
         Route::get('/profile', 'profile');
-        Route::get('/setting', 'setting');
+        Route::get('/settings', 'setting');
         Route::get('/dashboard', 'dashboard');
         Route::post('/update-profile', 'update_profile');
     });

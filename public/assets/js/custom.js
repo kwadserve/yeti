@@ -8,7 +8,6 @@
     $('#course_video').on('ended',function(){
         $('#next-video').removeClass("d-none");
         $('#quiz-link').removeClass("d-none");
-        alert("The video has ended");
     });
 
     var timeout;

@@ -37,6 +37,10 @@
         .rbt-accordion-style .card + .card {
             margin-top: 0;
         }
+        .rbt-scroll-max-height {
+            max-height: 100vh !important;
+            overflow-y: scroll;
+        }
     </style>
 </head>
 <?php
@@ -74,12 +78,12 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
                                 $timeline = (array)json_decode($video->timeline);
                             @endphp
                             <div class="accordion-item card">
-                                <h2 class="accordion-header card-header" id="headingTwo4">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#collapseTwo4" aria-controls="collapseTwo4">
+                                <h2 class="accordion-header card-header" id="heading{{$video->id}}">
+                                    <button class="accordion-button {{$currentUrl === 'course' && $currentVideo->id === $video->id ? '' : 'collapsed'}}" type="button" data-bs-toggle="collapse" aria-expanded="{{$currentUrl === 'course' && $currentVideo->id === $video->id ? 'true' : 'false'}}" data-bs-target="#collapse{{$video->id}}" aria-controls="collapse{{$video->id}}">
                                         {{$video->video}}
                                     </button>
                                 </h2>
-                                <div id="collapseTwo4" class="accordion-collapse collapse {{$currentUrl === 'course' ? 'show' : ''}}" aria-labelledby="headingTwo4">
+                                <div id="collapse{{$video->id}}" class="accordion-collapse collapse {{$currentUrl === 'course' && $currentVideo->id === $video->id ? 'show' : ''}}" aria-labelledby="heading{{$video->id}}">
                                     <div class="accordion-body card-body">
                                         <ul class="rbt-course-main-content liststyle">
                                             @foreach($timeline as $tl)
@@ -96,11 +100,22 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
                                                     <div class="course-content-right">
                                                         <span class="min-lable">{{$min}}:{{$sec < 10 ? '0'.$sec : $sec}}</span>
                                                         @if($video->id === $currentVideo->id)
-                                                        <span class="rbt-check unread"><i class="feather-cirlce"></i></span>
-                                                        @elseif($video->test > $currentVideo->test)
-                                                        <span class="rbt-check unread"><i class="feather-lock"></i></span>
+                                                            @if($currentUrl != 'quiz')
+                                                            <span class="rbt-check unread"><i class="feather-cirlce"></i></span>
+                                                            @else
+                                                            <span class="rbt-check"><i class="feather-check"></i></span>
+                                                            @endif
                                                         @else
-                                                        <span class="rbt-check"><i class="feather-check"></i></span>
+                                                        @switch(true)
+                                                            @case($video->test < $currentVideo->test)
+                                                                <span class="rbt-check"><i class="feather-check"></i></span>
+                                                                @break
+                                                            @case($video->test >= $currentVideo->test)
+                                                                <span class="rbt-check unread"><i class="feather-lock"></i></span>
+                                                                @break
+                                                            @default
+                                                                <span class="rbt-check unread"><i class="feather-lock"></i></span>
+                                                        @endswitch
                                                         @endif
                                                     </div>
                                                 </a>
@@ -111,43 +126,145 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
                                     </div>
                                 </div>
                             </div>
+                            
+                            @switch(true)
+                                @case($video->serial === 3 && (int)$video->test === 1)
+                                    <div class="accordion-item card">
+                                        <h2 class="accordion-header card-header" id="heading{{$video->test}}qq">
+                                            <button class="accordion-button collapsed {{$currentUrl === 'quiz' ? 'show' : ''}} {{$currentUrl === 'result' ? 'show' : ''}}" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#collapse{{$video->test}}qq" aria-controls="collapse{{$video->test}}qq">
+                                                Statistics quiz
+                                            </button>
+                                        </h2>
+                                        <div id="collapse{{$video->test}}qq" class="accordion-collapse collapse" aria-labelledby="heading{{$video->test}}qq">
+                                            <div class="accordion-body card-body">
+                                                <ul class="rbt-course-main-content liststyle">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="course-content-left">
+                                                                <i class="feather-help-circle"></i> <span class="text">Questions</span>
+                                                            </div>
+                                                            {{-- <div class="course-content-right">
+                                                                @if($test === 1 && )
+                                                                <span class="rbt-check {{$currentUrl === 'result' ? '' : 'unread'}}">
+                                                                    <i class="feather-{{$currentUrl === 'result' ? 'check' : 'circle'}}"></i>
+                                                                </span>
+                                                            </div> --}}
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="course-content-left">
+                                                                <i class="feather-help-circle"></i> <span class="text">Result</span>
+                                                            </div>
+                                                            {{-- <div class="course-content-right">
+                                                                <span class="rbt-check unread"><i class="feather-circle"></i></span>
+                                                            </div> --}}
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @break
+                                @case($video->serial === 3 && (int)$video->test === 2)
+                                    <div class="accordion-item card">
+                                        <h2 class="accordion-header card-header" id="heading{{$video->test}}qq">
+                                            <button class="accordion-button collapsed {{$currentUrl === 'quiz' ? 'show' : ''}} {{$currentUrl === 'result' ? 'show' : ''}}" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#collapse{{$video->test}}qq" aria-controls="collapse{{$video->test}}qq">
+                                                Mid-course quiz
+                                            </button>
+                                        </h2>
+                                        <div id="collapse{{$video->test}}qq" class="accordion-collapse collapse" aria-labelledby="heading{{$video->test}}qq">
+                                            <div class="accordion-body card-body">
+                                                <ul class="rbt-course-main-content liststyle">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="course-content-left">
+                                                                <i class="feather-help-circle"></i> <span class="text">Questions</span>
+                                                            </div>
+                                                            {{-- <div class="course-content-right">
+                                                                @switch(true)
+                                                                    @case($video->test < (int)$test)
+                                                                        <span class="rbt-check"><i class="feather-check"></i></span>
+                                                                        @break
+                                                                    @case($video->test > (int)$test)
+                                                                        <span class="rbt-check unread"><i class="feather-lock"></i></span>
+                                                                        @break
+                                                                    @default
+                                                                        <span class="rbt-check unread"><i class="feather-circle"></i></span>
+                                                                @endswitch
+                                                                <span class="rbt-check {{$currentUrl === 'result' ? '' : 'unread'}}">
+                                                                    <i class="feather-{{$currentUrl === 'result' ? 'check' : 'circle'}}"></i>
+                                                                </span>
+                                                            </div> --}}
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="course-content-left">
+                                                                <i class="feather-help-circle"></i> <span class="text">Result</span>
+                                                            </div>
+                                                            {{-- <div class="course-content-right">
+                                                                @switch(true)
+                                                                    @case($video->test < (int)$test)
+                                                                        <span class="rbt-check"><i class="feather-check"></i></span>
+                                                                        @break
+                                                                    @case($video->test > (int)$test)
+                                                                        <span class="rbt-check unread"><i class="feather-lock"></i></span>
+                                                                        @break
+                                                                    @default
+                                                                        <span class="rbt-check unread"><i class="feather-circle"></i></span>
+                                                                @endswitch
+                                                            </div> --}}
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @break
+                                @case($video->serial === 4 && (int)$video->test === 3)
+                                    <div class="accordion-item card">
+                                        <h2 class="accordion-header card-header" id="heading{{$video->test}}qq">
+                                            <button class="accordion-button collapsed {{$currentUrl === 'quiz' ? 'show' : ''}} {{$currentUrl === 'result' ? 'show' : ''}}" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#collapse{{$video->test}}qq" aria-controls="collapse{{$video->test}}qq">
+                                                End-course quiz
+                                            </button>
+                                        </h2>
+                                        <div id="collapse{{$video->test}}qq" class="accordion-collapse collapse" aria-labelledby="heading{{$video->test}}qq">
+                                            <div class="accordion-body card-body">
+                                                <ul class="rbt-course-main-content liststyle">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="course-content-left">
+                                                                <i class="feather-help-circle"></i> <span class="text">Questions</span>
+                                                            </div>
+                                                            {{-- <div class="course-content-right">
+                                                                <span class="rbt-check {{$currentUrl === 'result' ? '' : 'unread'}}">
+                                                                    <i class="feather-{{$currentUrl === 'result' ? 'check' : 'circle'}}"></i>
+                                                                </span>
+                                                            </div> --}}
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="course-content-left">
+                                                                <i class="feather-help-circle"></i> <span class="text">Result</span>
+                                                            </div>
+                                                            {{-- <div class="course-content-right">
+                                                                <span class="rbt-check unread"><i class="feather-circle"></i></span>
+                                                            </div> --}}
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @break
+                                @default
+                                    
+                            @endswitch
                             @endforeach
 
-                            <div class="accordion-item card">
-                                <h2 class="accordion-header card-header" id="headingTwo2">
-                                    <button class="accordion-button collapsed {{$currentUrl === 'quiz' ? 'show' : ''}} {{$currentUrl === 'result' ? 'show' : ''}}" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#collapseTwo2" aria-controls="collapseTwo2">
-                                        Quiz <span class="rbt-badge-5 ml--10">{{$test}}/3</span>
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2">
-                                    <div class="accordion-body card-body">
-                                        <ul class="rbt-course-main-content liststyle">
-                                            <li>
-                                                <a href="#">
-                                                    <div class="course-content-left">
-                                                        <i class="feather-help-circle"></i> <span class="text">Questions</span>
-                                                    </div>
-                                                    <div class="course-content-right">
-                                                        <span class="rbt-check {{$currentUrl === 'result' ? '' : 'unread'}}">
-                                                            <i class="feather-{{$currentUrl === 'result' ? 'check' : 'circle'}}"></i>
-                                                        </span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="course-content-left">
-                                                        <i class="feather-help-circle"></i> <span class="text">Result</span>
-                                                    </div>
-                                                    <div class="course-content-right">
-                                                        <span class="rbt-check unread"><i class="feather-circle"></i></span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
