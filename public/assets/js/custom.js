@@ -61,7 +61,4 @@
             }
         });
     }
-    $('#next-video').on('click', function(e) {
-        location.reload(true);
-    })
 })(window, document, jQuery);

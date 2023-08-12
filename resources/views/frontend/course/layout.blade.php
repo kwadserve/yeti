@@ -70,7 +70,7 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
                         <div class="accordion" id="accordionExampleb2">
                             <div class="rbt-course-main-content liststyle">
                                 <h2 class="rbt-title-style-3">
-                                    <a href="#">
+                                    <a>
                                         <div class="course-content-left">
                                             <i class="feather-file-text"></i> <span class="text">Introduction</span>
                                         </div>
