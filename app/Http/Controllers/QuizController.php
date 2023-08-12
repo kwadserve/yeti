@@ -44,9 +44,7 @@ class QuizController extends Controller
         }
         $test = UserMeta::where('user_id', $user->id)->where('meta_key', 'current_test');
         if((int)$test->first()->meta_value < 3)
-        $test->update([
-            'meta_value' => (int)$test->first()->meta_value + 1
-        ]);
+        
         return redirect()->to('result');
     }
 }

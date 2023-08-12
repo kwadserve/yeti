@@ -37,7 +37,7 @@
                         @php
                         $result = App\Models\UserResult::where('user_id', Auth::id())->where('question_id', $question->id)->first();
                         $answer = $question->{$question->answer};
-                        $res = $question->{$result->answered}                        
+                        $res = $question->{$result->answered};                        
                         @endphp
                         <tr>
                             <th>
@@ -76,10 +76,27 @@
     <div class="bg-color-extra2 ptb--15 overflow-hidden">
         <div class="rbt-button-group">
 
-            <a class="rbt-btn icon-hover btn-md" href="#">
+            @if($mark<10)
+            <a class="rbt-btn icon-hover icon-hover-left btn-md" href="{{url('quiz')}}">
+                <span class="btn-icon"><i class="feather-arrow-left"></i></span>
+                <span class="btn-text">Quiz</span>                
+            </a>
+            @else
+            <?php 
+            $update = App\Models\UserMeta::where('user_id', Auth::id())->where('meta_key', 'current_test');
+            $newTest = (int)$test->meta_value + 1;
+            $update->update([
+                'meta_value' => $newTest
+            ]);
+            $newId = App\Models\Video::where('test', $newTest)->where('serial', 1)->first()->id;
+            $videoId = App\Models\UserMeta::where('user_id', Auth::id())->where('meta_key', 'last_video')->update(['meta_value' => $newId]);
+            $videoTime = App\Models\UserMeta::where('user_id', Auth::id())->where('meta_key', 'last_video_time')->update(['meta_value' => 0]);
+            ?>
+            <a class="rbt-btn icon-hover btn-md" href="{{url('course')}}">
                 <span class="btn-text">Next</span>
                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
             </a>
+            @endif
 
         </div>
     </div>

@@ -18,14 +18,14 @@
         <div class="inner">
             <div class="content">
                 <div class="section-title">
-                    <h4>Introduction to Our Histudy</h4>
-                    <p>Welcome to our online course for beginners JavaScript! This course is designed to give you a solid foundation in the basics of JavaScript programming. Whether you're looking to pursue a career in web development, or just interested in learning a valuable new skill, this course is the perfect place to start.</p>
+                    <h4>What you'll learn</h4>
+                    <p>You are a learning module away from making a difference in India’s youth vote. By becoming a certified electoral instructor, you stand the chance to not only learn the precise way to register voters on the ECI’s platform, but also gain knowledge of the youth rights movement in India, its importance in the 21st century and learn to speak confidently of these to your peers!</p>
 
-                    <p>Throughout this course, you'll learn the fundamental concepts of programming such as variables, data types, functions, and control structures. You'll also learn how to use these concepts to create simple programs and web applications.</p>
+                    <p>Make a difference in India’s youth vote Young India Foundation welcomes you to its first one of kind free course to becoming training facilitators on Youth Rights & Electoral Democracy. We believe that young people have the ability to play a larger role through civic participation and bringing forth change through their actions.</p>
 
-                    <p>Our course is structured in a way that makes learning easy and fun. We use a combination of video lectures, hands-on exercises, and quizzes to help you reinforce your understanding of the material. Additionally, we provide detailed explanations and examples to help you overcome any challenges you may encounter along the way.</p>
+                    <p>This online course named is offered solely online by Young India Foundation's Centre for Youth Policy, but is not equivalent to an on-campus course. It does not confer a University grade, course credits or a degree, and does not hold and/or guarantee affiliation of the recipient with the Election Commission of India</p>
 
-                    <p>By the end of this course, you'll be able to write basic JavaScript code, understand the fundamental concepts of programming, and be able to build simple web applications. So let's get started and begin your journey to becoming a proficient JavaScript programmer!</p>
+                    
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
         </div>
         <div class="inner">
             <div class="plyr__video-embed rbtplayer">
-                <video id="course_video" width="100%" controls controlsList="nodownload">
+                <video id="course_video" width="100%" preload="true" controls="play" controlsList="nodownload">
                     <source src="{{URL::asset('/'.$video->location.'#t='.$videoTime->meta_value)}}" type="video/mp4">
                     Your browser does not support HTML video.
                 </video>
@@ -78,7 +78,7 @@
                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                 </a>
                 @else
-                <a class="rbt-btn icon-hover btn-md d-none" href="#" id="next-video">
+                <a class="rbt-btn icon-hover btn-md d-none" href="{{url('course')}}" id="next-video">
                     <span class="btn-text">Next</span>
                     <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                 </a>
