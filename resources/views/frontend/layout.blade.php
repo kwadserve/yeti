@@ -31,6 +31,7 @@
         <link rel="stylesheet" href="{{url('assets/css/plugins/magnigy-popup.min.css')}}">
         <link rel="stylesheet" href="{{url('assets/css/plugins/plyr.css')}}">
         <link rel="stylesheet" href="{{url('assets/css/style.css')}}">
+         <script src="https://www.youtube.com/iframe_api"></script>
     </head>
     <body class="rbt-header-sticky">
         <!-- Start Header Area -->
@@ -260,10 +261,10 @@
                                 <h5 class="ft-title">Legal</h5>
                                 <ul class="ft-link">
                                     <li>
-                                        <a href="contact.html">Terms</a>
+                                        <a href="https://youngindia.foundation/terms.php">Terms</a>
                                     </li>
                                     <li>
-                                        <a href="become-a-teacher.html">Privacy Policy</a>
+                                        <a href="https://youngindia.foundation/privacy_policy.php">Privacy Policy</a>
                                     </li>
                                    
                                 </ul>
@@ -276,7 +277,8 @@
                                 <ul class="ft-link">
                                     <li><span>Phone:</span> <a href="#">+91-9833824000</a></li>
                                     <li><span>E-mail:</span> <a href="mailto:hr@example.com">contact@youngindiafoundation.org</a></li>
-                                    <li><span>Location:</span>  C14, Block C, Panchsheel Enclave, New Delhi, Delhi 110017</li>
+                                    <li><span>Location:</span> 2132, Near PWD Rest House, Fatehpur, Karnal Road
+         Pundri, Kaithal (Haryana) - 136042</li>
                                 </ul>
                                 <ul class="social-icon social-default icon-naked justify-content-start mt--20">
                                     <li><a href="https://www.facebook.com/youngindiafdn">

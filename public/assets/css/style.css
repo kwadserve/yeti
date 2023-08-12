@@ -20395,6 +20395,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 }
 .rbt-testimonial-box.style-2 .inner {
   text-align: center;
+  min-height: 350px;
 }
 .rbt-testimonial-box.style-2 .inner::before {
   background-image: url(../images/icons/quote.svg);

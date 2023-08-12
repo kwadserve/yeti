@@ -5,6 +5,7 @@
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
+    
     $('#course_video').on('ended',function(){
         $('#next-video').removeClass("d-none");
         $('#quiz-link').removeClass("d-none");
@@ -24,6 +25,7 @@
             }, 5000)
         }
     });
+    
     function updateDuration(time) {
         $.ajax({
             url:'update_duration',

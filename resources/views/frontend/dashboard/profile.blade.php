@@ -13,7 +13,7 @@
                 <div class="rbt-profile-content b2">Registration Date</div>
             </div>
             <div class="col-lg-8 col-md-8">
-                <div class="rbt-profile-content b2">February 25, 2025 6:01 am</div>
+                <div class="rbt-profile-content b2">.</div>
             </div>
         </div>
         <!-- End Profile Row  -->
@@ -46,7 +46,7 @@
                 <div class="rbt-profile-content b2">PIN</div>
             </div>
             <div class="col-lg-8 col-md-8">
-                <div class="rbt-profile-content b2">+1-202-555-0174</div>
+                <div class="rbt-profile-content b2">.</div>
             </div>
         </div>
         <!-- End Profile Row  -->
@@ -57,7 +57,7 @@
                 <div class="rbt-profile-content b2">City</div>
             </div>
             <div class="col-lg-8 col-md-8">
-                <div class="rbt-profile-content b2">Application Developer</div>
+                <div class="rbt-profile-content b2">.</div>
             </div>
         </div>
         <!-- End Profile Row  -->
@@ -68,7 +68,7 @@
                 <div class="rbt-profile-content b2">State</div>
             </div>
             <div class="col-lg-8 col-md-8">
-                <div class="rbt-profile-content b2"></div>
+                <div class="rbt-profile-content b2">.</div>
             </div>
         </div>
         <!-- End Profile Row  -->
@@ -79,7 +79,7 @@
                 <div class="rbt-profile-content b2">Institute</div>
             </div>
             <div class="col-lg-8 col-md-8">
-                <div class="rbt-profile-content b2">+1-202-555-0174</div>
+                <div class="rbt-profile-content b2">.</div>
             </div>
         </div>
         <!-- End Profile Row  -->
@@ -90,7 +90,7 @@
                 <div class="rbt-profile-content b2">Biography</div>
             </div>
             <div class="col-lg-8 col-md-8">
-                <div class="rbt-profile-content b2">I'm the Front-End Developer for #Rainbow IT in Bangladesh, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</div>
+                <div class="rbt-profile-content b2">Click on user settings to add your bio</div>
             </div>
         </div>
         <!-- End Profile Row  -->

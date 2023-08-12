@@ -18,7 +18,7 @@
                     <div class="rbt-tutor-information">
                         <div class="rbt-tutor-information-left">
                             <div class="thumbnail rbt-avatars size-lg">
-                                <img src="{{url('assets/images/team/avatar-2.jpg')}}" alt="Instructor">
+                                <img src="{{url('https://cdn-icons-png.flaticon.com/512/6596/6596121.png')}}" alt="Instructor">
                             </div>
                             <div class="tutor-content">
                                 <h5 class="title">{{$user->name}}</h5>
