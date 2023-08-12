@@ -56,11 +56,11 @@
             </div>
         </div>
         <div class="inner">
-            <div class="plyr__video-embed rbtplayer">
-                <video id="course_video" width="100%" controls controlsList="nodownload">
+            <div class="plyr__video-embed rbtplayer" id="player">
+                {{-- <video id="course_video" width="100%" controls controlsList="nodownload">
                     <source src="{{URL::asset('/'.$video->location.'#t='.$videoTime->meta_value)}}" type="video/mp4">
                     Your browser does not support HTML video.
-                </video>
+                </video> --}}
             </div>
             <div class="content">
                 <div class="section-title">
@@ -92,6 +92,7 @@
             document.getElementById('course-video').classList.remove('d-none');
         }
     </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
 @endsection
 
             

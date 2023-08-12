@@ -75,12 +75,22 @@
 
     <div class="bg-color-extra2 ptb--15 overflow-hidden">
         <div class="rbt-button-group">
-
+            @if($mark<10)
+            <a class="rbt-btn icon-hover icon-hover-left btn-md" href="{{url('quiz')}}">
+                <span class="btn-icon"><i class="feather-arrow-left"></i></span>
+                <span class="btn-text">Quiz</span>                
+            </a>
+            @else
+            <?php 
+            $updateTest = App\Models\UserMeta::where('user_id', Auth::id())->where('meta_key', 'current_test')->update([
+                'meta_value' => (int)$test->first()->meta_value + 1
+            ]);
+            ?>
             <a class="rbt-btn icon-hover btn-md" href="#">
                 <span class="btn-text">Next</span>
                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
             </a>
-
+            @endif
         </div>
     </div>
 

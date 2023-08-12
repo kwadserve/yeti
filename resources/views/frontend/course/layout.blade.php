@@ -41,6 +41,10 @@
             max-height: 100vh !important;
             overflow-y: scroll;
         }
+        audio::-webkit-media-controls-timeline,
+        video::-webkit-media-controls-timeline {
+            display: none;
+        }
     </style>
 </head>
 <?php
@@ -92,7 +96,7 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
                                                 $sec = $tl->time - $min*60;
                                             @endphp
                                             <li>
-                                                <a href="#">
+                                                <a>
                                                     <div class="course-content-left">
                                                         <i class="feather-play-circle"></i> 
                                                         <span class="text">{{$tl->info}}</span>
@@ -139,7 +143,7 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
                                             <div class="accordion-body card-body">
                                                 <ul class="rbt-course-main-content liststyle">
                                                     <li>
-                                                        <a href="#">
+                                                        <a>
                                                             <div class="course-content-left">
                                                                 <i class="feather-help-circle"></i> <span class="text">Questions</span>
                                                             </div>
@@ -152,7 +156,7 @@ $currentVideo = App\Models\Video::where('id', (int)$currentVideoID->meta_value)-
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">
+                                                        <a>
                                                             <div class="course-content-left">
                                                                 <i class="feather-help-circle"></i> <span class="text">Result</span>
                                                             </div>

@@ -6,6 +6,32 @@
         }
     });
     
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            
+            videoId: '8U7b2FAsVEo',
+            playerVars: {
+                    controls: 0,        // Hide player controls
+                    disablekb: 1,       // Disable keyboard controls
+                    rel: 0,             // Disable related videos at the end
+                    showinfo: 0,        // Hide video title and uploader info
+                    modestbranding: 1,  // Hide YouTube logo
+                    fs: 0               // Hide fullscreen button
+                },
+            events: {
+            'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data === YT.PlayerState.ENDED) {
+          showCompletionButton();
+        }
+    }
+
     $('#course_video').on('ended',function(){
         $('#next-video').removeClass("d-none");
         $('#quiz-link').removeClass("d-none");

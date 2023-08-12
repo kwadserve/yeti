@@ -17,8 +17,9 @@ class CourseController extends Controller
         $videoTime = UserMeta::where('user_id', $user->id)->where('meta_key', 'last_video_time')->first();
         $test = UserMeta::where('user_id', $user->id)->where('meta_key', 'current_test')->first();
         $video = Video::where('id', (int)$videoId->meta_value)->first();
+        $nextVideo = Video::where('test', (int)$test->meta_value)->where('serial', $video->serial + 1)->first();
         if((int)$videoTime->meta_value === $video->duration){
-            $nextVideo = Video::where('test', (int)$test->meta_value)->where('serial', $video->serial + 1)->first();
+            
             if($nextVideo){
                 $video = $nextVideo;
                 $nextVideoTime = UserMeta::where('user_id', $user->id)->where('meta_key', 'last_video_time')->update(['meta_value' => 0]);
