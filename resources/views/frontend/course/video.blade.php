@@ -61,7 +61,6 @@
                     <source src="{{URL::asset('/'.$video->location.'#t='.$videoTime->meta_value)}}" type="video/mp4">
                     Your browser does not support HTML video.
                 </video>
-                {{-- <iframe src="https://www.youtube.com/watch?v=tXWebwlfqfc&t=20" width="100%" height="100%"></iframe> --}}
             </div>
             <div class="content">
                 <div class="section-title">

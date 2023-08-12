@@ -89,7 +89,7 @@
                     <div class="row row--30 gy-5 align-items-center">
                         <div class="col-lg-6 col-xl-5">
                             <div class="thumbnail rbt-shadow-box">
-                                <img class="w-100 radius-10" src="assets/images/course/yeticourse.jpg" alt="Card image">
+                                <img class="w-100 radius-10" src="assets/images/yeticourse.png" alt="Card image">
                             </div>
                         </div>
 
@@ -211,24 +211,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                         <div class="content">
                                             <h2 class="title">Get a Certificate</h2>
                                             <p>Course Duration: 1 week to 1 month, dependent on your personal pace of learning and availability.<br>Course registration starts: 12 August 2023, 1 p.m.</p>
-                                            <ul class="course-feature-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <img src="assets/images/icons/card-icon-11.png" alt="Image Icon">
-                                                    </div>
-                                                    <div class="feature-content">
-                                                        <h4 class="featute-title">5000+ <span>Get Award</span></h4>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <img src="assets/images/icons/card-icon-12.png" alt="Image Icon">
-                                                    </div>
-                                                    <div class="feature-content">
-                                                        <h4 class="featute-title">10K+ <span>Zero to career </span></h4>
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -321,13 +304,13 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <div class="col-lg-6">
                     <div class="feature-course-thumbnail">
                         <div class="video-popup-wrapper rbt-shadow-box">
-                            <img class="w-100 radius-10" src="assets/images/course/course-elegant-01.jpg" alt="Card image">
-                            <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation btn-white-color" href="https://www.youtube.com/watch?v=nA1Aqp0sPQo">
+                            <img class="w-100 radius-10" src="assets/images/ytthumb.jpeg" alt="Card image">
+                            <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation btn-white-color" href="https://www.youtube.com/watch?v=8U7b2FAsVEo">
                                 <span class="play-icon"></span>
                             </a>
                         </div>
                         <div class="enroll-btn mt--15">
-                            <a class="rbt-btn btn-gradient hover-icon-reverse w-100 radius-round" href="#">
+                            <a class="rbt-btn btn-gradient hover-icon-reverse w-100 radius-round" href="{{url('profile')}}">
                                 <span class="icon-reverse-wrapper">
                                     <span class="btn-text">Continue Course</span>
                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
@@ -343,7 +326,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                             <div class="accordion" id="accordionExampleb2">
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo1">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="true" aria-controls="collapseTwo1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
                                             Being Young in India
                                         </button>
                                     </h2>
@@ -351,7 +334,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
 
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">An introduction to YIF and why we started</span>
@@ -362,17 +345,17 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                         
                                                     </a></li>
 
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span class="text">A brief overview of the current state of the youth in India</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
+                                                           <i class="feather-lock"></i>
                                                         </div>
                                                         
                                                     </a></li>
 
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span class="text">What is YETI?</span>
                                                         </div>
@@ -389,14 +372,14 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo2">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                                             The Demographic Dividend
                                         </button>
                                     </h2>
                                     <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">A brief overview</span>
@@ -420,7 +403,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                     <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">How the Indian youth is doing</span>
@@ -444,7 +427,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                     <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Terminology and definitions</span>
@@ -453,7 +436,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                 <li><a href="#">
+                                                 <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Applications in the Indian Polity</span>
@@ -477,7 +460,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                     <div id="collapseTwo5" class="accordion-collapse collapse" aria-labelledby="headingTwo5" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Lok Sabha/Rajya Sabha</span>
@@ -486,7 +469,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Youngest electorate – oldest parliament + LS have only been getting older</span>
@@ -495,7 +478,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Comparison of average ages of India v/s the LS</span>
@@ -519,7 +502,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                     <div id="collapseTwo6" class="accordion-collapse collapse" aria-labelledby="headingTwo6" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">The Age of Candidacy (with world comparisons)</span>
@@ -528,7 +511,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Age and Experience</span>
@@ -554,7 +537,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                     <div id="collapseTwo7" class="accordion-collapse collapse" aria-labelledby="headingTwo7" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">India’s youth urban voter apathy</span>
@@ -563,7 +546,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Probable causes (moving as students, lack of info, etc.)</span>
@@ -572,7 +555,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                 <li><a href="#">
+                                                 <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">International Comparison</span>
@@ -581,7 +564,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                 <li><a href="#">
+                                                 <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">2019 v/s the 90 million gap</span>
@@ -607,7 +590,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                     <div id="collapseTwo8" class="accordion-collapse collapse" aria-labelledby="headingTwo8" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Example of DU + Darsh’s video</span>
@@ -616,7 +599,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Polling booths in colleges and universities</span>
@@ -641,7 +624,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                     <div id="collapseTwo9" class="accordion-collapse collapse" aria-labelledby="headingTwo9" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">An EPIC</span>
@@ -650,7 +633,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Voter Portal + Voter registration</span>
@@ -659,7 +642,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Follow-ups + checking your BLO/next election</span>
@@ -668,7 +651,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Are you a student/young professional? Re-registration form</span>
@@ -695,7 +678,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                     <div id="collapseTwo10" class="accordion-collapse collapse" aria-labelledby="headingTwo10" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">How to: have that conversation - Do’s and Don'ts</span>
@@ -704,7 +687,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Community engagement + ideas to implement locally</span>
@@ -713,7 +696,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a href="#">
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Joining YIF events</span>
@@ -730,6 +713,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -747,8 +731,8 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center">
-                            <span class="subtitle bg-primary-opacity">EDUCATION FOR EVERYONE</span>
-                            <h2 class="title">People like histudy education. <br /> No joking - here’s the proof!</h2>
+                            <span class="subtitle bg-primary-opacity">YETI Reviews</span>
+                            <h2 class="title">People love our course. <br /> No joking - here’s the proof!</h2>
                         </div>
 
                     </div>
@@ -763,17 +747,15 @@ It does not confer a University grade, course credits or a degree, and does not 
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
                             <div class="icons">
-                                <img src="assets/images/icons/facebook.png" alt="Clint Images">
+                                
                             </div>
                             <div class="description">
-                                <p class="subtitle-3">After the launch, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                <br>
+                                <p class="subtitle-3">I took the course and watched the videos based on a friend’s suggestion and I must say that it was extremely informative and a lot of fun</p>
                                 <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-01.png" alt="Clint Images">
-                                    </div>
+                                    
                                     <div class="client-info">
-                                        <h5 class="title">Martha Maldonado, <span>CEO</span></h5>
+                                        <h5 class="title">Parth Gaikwad</h5>
                                     </div>
                                 </div>
                             </div>
@@ -786,18 +768,14 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/google.png" alt="Clint Images">
-                            </div>
+                            
                             <div class="description">
-                                <p class="subtitle-3">Histudy education, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                <br>
+                                <p class="subtitle-3">The course was a lot more interesting than I’d thought. The videos were short and well-explained to create awareness about voting and its entire process.</p>
                                 <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-02.png" alt="Clint Images">
-                                    </div>
+                                    
                                     <div class="client-info">
-                                        <h5 class="title">Michael D., <span>CEO</span></h5>
+                                        <h5 class="title">Kartik Gupta</h5>
                                     </div>
                                 </div>
                             </div>
@@ -810,18 +788,16 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/yelp.png" alt="Clint Images">
-                            </div>
+                            
                             <div class="description">
-                                <p class="subtitle-3">Our educational, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                <br>
+                                <p class="subtitle-3">Voting 101:
+Voting has now been demystified for me. As a young person, I found it very informative and interesting. Highly recommend it for people enthusiastic about civic engagement and youth participation.
+</p>
                                 <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-03.png" alt="Clint Images">
-                                    </div>
+                                    
                                     <div class="client-info">
-                                        <h5 class="title">Valerie J., <span>CEO</span></h5>
+                                        <h5 class="title">Rakesh Jena</h5>
                                     </div>
                                 </div>
                             </div>
@@ -834,18 +810,14 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/facebook.png" alt="Clint Images">
-                            </div>
+                            
                             <div class="description">
-                                <p class="subtitle-3">People says about, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                <br>
+                                <p class="subtitle-3">I’ve never found politics engaging but this is a fun way to learn civic engagement and how to register voters.</p>
                                 <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-04.png" alt="Clint Images">
-                                    </div>
+                                    
                                     <div class="client-info">
-                                        <h5 class="title">Hannah R., <span>CEO</span></h5>
+                                        <h5 class="title">Lavanya Ashok</h5>
                                     </div>
                                 </div>
                             </div>
@@ -853,125 +825,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                     </div>
                 </div>
                 <!-- End Single Testimonial  -->
-                <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-odd">
-                    <div class="rbt-testimonial-box style-2">
-                        <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/bing.png" alt="Clint Images">
-                            </div>
-                            <div class="description">
-                                <p class="subtitle-3">Like this histudy, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
-                                <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-05.png" alt="Clint Images">
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="title">Pearl B. Hill, <span>Marketing</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Testimonial  -->
-
-                <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-odd">
-                    <div class="rbt-testimonial-box style-2">
-                        <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/facebook.png" alt="Clint Images">
-                            </div>
-                            <div class="description">
-                                <p class="subtitle-3">Educational template, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
-                                <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-01.png" alt="Clint Images">
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="title">Mandy F. Wood, <span>SR Designer</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Testimonial  -->
-
-                <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-odd">
-                    <div class="rbt-testimonial-box style-2">
-                        <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/hubs.png" alt="Clint Images">
-                            </div>
-                            <div class="description">
-                                <p class="subtitle-3">Online leaning, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
-                                <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-07.png" alt="Clint Images">
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="title">Mildred W. Diaz, <span>Executive</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Testimonial  -->
-
-                <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-odd">
-                    <div class="rbt-testimonial-box style-2">
-                        <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/bing.png" alt="Clint Images">
-                            </div>
-                            <div class="description">
-                                <p class="subtitle-3">Remote learning, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
-                                <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-08.png" alt="Clint Images">
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="title">Christopher, <span>CEO</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Testimonial  -->
-
-                <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-odd">
-                    <div class="rbt-testimonial-box style-2">
-                        <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/yelp.png" alt="Clint Images">
-                            </div>
-                            <div class="description">
-                                <p class="subtitle-3">University managemnet, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
-                                <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-06.png" alt="Clint Images">
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="title">Fatima, <span>Child</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Testimonial  -->
+                
             </div>
         </div>
 
@@ -979,21 +833,17 @@ It does not confer a University grade, course credits or a degree, and does not 
             <div class="scroll-animation scroll-left-right">
 
                 <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-even">
+                <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/facebook.png" alt="Clint Images">
-                            </div>
+                           
                             <div class="description">
-                                <p class="subtitle-3">After the launch, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                <br>
+                                <p class="subtitle-3">I wish this course existed when I was 18!</p>
                                 <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-01.png" alt="Clint Images">
-                                    </div>
+                                    
                                     <div class="client-info">
-                                        <h5 class="title">Martha Maldonado, <span>CEO</span></h5>
+                                        <h5 class="title">Pratiksha Chaukhande</span></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1003,21 +853,17 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <!-- End Single Testimonial  -->
 
                 <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-even">
+                <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/google.png" alt="Clint Images">
-                            </div>
+                            
                             <div class="description">
-                                <p class="subtitle-3">Histudy education, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                <br>
+                                <p class="subtitle-3">I never thought that I could register myself as a voter but now I can do it for me as well as the people around me, all because of the YETI course</p>
                                 <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-02.png" alt="Clint Images">
-                                    </div>
+                                    
                                     <div class="client-info">
-                                        <h5 class="title">Michael D., <span>CEO</span></h5>
+                                        <h5 class="title">Hiten Patel</span></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1027,21 +873,17 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <!-- End Single Testimonial  -->
 
                 <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-even">
+                <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/yelp.png" alt="Clint Images">
-                            </div>
+                            
                             <div class="description">
-                                <p class="subtitle-3">Our educational, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                <br>
+                                <p class="subtitle-3">The best part is that after becoming a YETI, I can now volunteer at interesting events at my convenience and put my knowledge to use.</p>
                                 <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-03.png" alt="Clint Images">
-                                    </div>
+                                    
                                     <div class="client-info">
-                                        <h5 class="title">Valerie J., <span>CEO</span></h5>
+                                        <h5 class="title">Vikas Seemwal</h5>
                                     </div>
                                 </div>
                             </div>
@@ -1051,44 +893,19 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <!-- End Single Testimonial  -->
 
                 <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-even">
+                <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/bing.png" alt="Clint Images">
-                            </div>
+                            
                             <div class="description">
-                                <p class="subtitle-3">People says about, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                <br>
+                                <p class="subtitle-3">From Classroom to Voting Booth:
+This course bridges the gap between classroom learning and active citizenship. It provides an essential toolkit for young individuals like me to navigate the world of elections, advocacy, and policy-making. A valuable resource for us to make our voices heard.
+</p>
                                 <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-04.png" alt="Clint Images">
-                                    </div>
+                                    
                                     <div class="client-info">
-                                        <h5 class="title">Hannah R., <span>CEO</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Testimonial  -->
-                <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-even">
-                    <div class="rbt-testimonial-box style-2">
-                        <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/hubs.png" alt="Clint Images">
-                            </div>
-                            <div class="description">
-                                <p class="subtitle-3">Like this histudy, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
-                                <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-05.png" alt="Clint Images">
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="title">Pearl B. Hill, <span>Marketing</span></h5>
+                                        <h5 class="title">Nikita Bhopale</span></h5>
                                     </div>
                                 </div>
                             </div>
@@ -1098,93 +915,17 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <!-- End Single Testimonial  -->
 
                 <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-even">
+                <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/yelp.png" alt="Clint Images">
-                            </div>
+                            
                             <div class="description">
-                                <p class="subtitle-3">Educational template, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
+                                <br>
+                                <p class="subtitle-3">An eye-opening course that delves into the history, challenges, and triumphs of youth rights in the realm of voting. Engaging content and interactive modules make learning about civic engagement an enjoyable experience. Prepare to be inspired!</p>
                                 <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-01.png" alt="Clint Images">
-                                    </div>
+                                    
                                     <div class="client-info">
-                                        <h5 class="title">Mandy F. Wood, <span>SR Designer</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Testimonial  -->
-
-                <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-even">
-                    <div class="rbt-testimonial-box style-2">
-                        <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/bing.png" alt="Clint Images">
-                            </div>
-                            <div class="description">
-                                <p class="subtitle-3">Online leaning, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
-                                <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-07.png" alt="Clint Images">
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="title">Mildred W. Diaz, <span>Executive</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Testimonial  -->
-
-                <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-even">
-                    <div class="rbt-testimonial-box style-2">
-                        <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/facebook.png" alt="Clint Images">
-                            </div>
-                            <div class="description">
-                                <p class="subtitle-3">Remote learning, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
-                                <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-08.png" alt="Clint Images">
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="title">Christopher, <span>CEO</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Testimonial  -->
-
-                <!-- Start Single Testimonial  -->
-                <div class="single-column-20 bg-theme-gradient-even">
-                    <div class="rbt-testimonial-box style-2">
-                        <div class="inner">
-                            <div class="icons">
-                                <img src="assets/images/icons/yelp.png" alt="Clint Images">
-                            </div>
-                            <div class="description">
-                                <p class="subtitle-3">University managemnet, vulputate at sapien sit amet,
-                                    auctor iaculis lorem. In vel hend rerit nisi. Vestibulum eget risus velit.</p>
-                                <div class="clint-info-wrapper">
-                                    <div class="thumb">
-                                        <img src="assets/images/testimonial/client-06.png" alt="Clint Images">
-                                    </div>
-                                    <div class="client-info">
-                                        <h5 class="title">Fatima, <span>Child</span></h5>
+                                        <h5 class="title">Rounak Kumar Choudhary</h5>
                                     </div>
                                 </div>
                             </div>

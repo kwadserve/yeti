@@ -17,6 +17,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//static Course
+Route::get('/course-static', function () {
+    return view('frontend.staticcourse');
+});
+
+Route::get('/course-sidebar', function () {
+    return view('frontend.course_sidebar');
+});
+
+Route::get('/course-main-content', function () {
+    return view('frontend.course_main_content');
+});
+
+
 //Homepage
 Route::get('/', function () {
     return view('frontend.homepage');
