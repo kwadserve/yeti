@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -33,5 +34,19 @@ class UserController extends Controller
     {
         $user =  Auth::user();
         return view('frontend.dashboard.setting', compact('user'));
+    }
+
+    //Admin Users List
+    public function userList()
+    {
+        $users = User::orderBy('created_at', 'DESC')->get();
+        return view('admin.user.list', compact('users'));
+    }
+
+    //Admin User Info
+    public function userInfo($id)
+    {
+        $user = User::where('id', $id)->first();
+        return view('admin.user.single', compact('user'));
     }
 }

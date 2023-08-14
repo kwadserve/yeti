@@ -2,39 +2,39 @@
 <html lang="en">
 
 <head>
-     <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>YIF | Youth Electoral Trained Instructor</title>
-        <meta name="robots" content="noindex, follow" />
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="{{url('assets/images/faviconyif.png')}}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>YIF | Youth Electoral Trained Instructor</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('assets/images/faviconyif.png') }}">
 
 
     <!-- CSS
-	============================================ -->
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/vendor/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/vendor/slick.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/vendor/slick-theme.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/sal.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/feather.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/fontawesome.min.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/euclid-circulara.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/swiper.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/magnify.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/odometer.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/animation.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/bootstrap-select.min.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/jquery-ui.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/magnigy-popup.min.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/plugins/plyr.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('/assets/css/style.css')}}">
+ ============================================ -->
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/vendor/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/vendor/slick.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/vendor/slick-theme.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/sal.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/feather.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/euclid-circulara.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/swiper.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/magnify.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/odometer.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/animation.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/bootstrap-select.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/magnigy-popup.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/plugins/plyr.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/style.css') }}">
     <style>
-        .rbt-accordion-style .card + .card {
+        .rbt-accordion-style .card+.card {
             margin-top: 0;
         }
     </style>

@@ -1,7 +1,5 @@
 @extends('frontend.layout')
 @section('content')
-
-   
     <a class="close_side_menu" href="javascript:void(0);"></a>
 
     <!-- Start Slider Area  -->
@@ -19,30 +17,31 @@
 
                         <div class="rbt-single-course-meta text-center mt--20">
                             @guest
-                            <div class="enroll-btn mt--15">
-                                <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{url('register')}}">
-                                    <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Register Now</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    </span>
-                                </a>
-                            </div>
+                                <div class="enroll-btn mt--15">
+                                    <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{ url('register') }}">
+                                        <span class="icon-reverse-wrapper">
+                                            <span class="btn-text">Register Now</span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        </span>
+                                    </a>
+                                </div>
                             @else
-                            <div class="enroll-btn mt--15">
-                                <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{url('profile')}}">
-                                    <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">View Dashboard</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    </span>
-                                </a>
-                            </div>
+                                <div class="enroll-btn mt--15">
+                                    <a class="rbt-btn btn-gradient hover-icon-reverse" href="{{ url('profile') }}">
+                                        <span class="icon-reverse-wrapper">
+                                            <span class="btn-text">View Dashboard</span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        </span>
+                                    </a>
+                                </div>
                             @endguest
-                            
+
                         </div>
 
-                        <div class="rbt-course-block mt--50 rbt-course-block rbt-shadow-box position-relative bg-primary-opacity">
+                        <div
+                            class="rbt-course-block mt--50 rbt-course-block rbt-shadow-box position-relative bg-primary-opacity">
                             <div class="row align-items-center g-2 g-lg-5">
                                 <div class="col-lg-4 col-md-4 col-sm-6 text-start">
 
@@ -54,7 +53,7 @@
                                 <div class="col-lg-4 col-md-4 col-sm-6 text-center">
                                     <div class="rbt-price large-size justify-content-start justify-content-lg-center">
                                         <span class="current-price">Free of Cost!</span>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6 text-end">
@@ -96,27 +95,36 @@
                         <div class="col-lg-6 col-xl-7">
                             <div class="section-title">
                                 <h2 class="title">What you'll learn</h2>
-                                <p class="b3 mt--15">You are a learning module away from making a difference in India’s youth vote. By becoming a certified electoral instructor, you stand the chance to not only learn the precise way to register voters on the ECI’s platform, but also gain knowledge of the youth rights movement in India, its importance in the 21st century and learn to speak confidently of these to your peers!
-                                
-                                <br><br>
+                                <p class="b3 mt--15">You are a learning module away from making a difference in India’s
+                                    youth vote. By becoming a certified electoral instructor, you stand the chance to not
+                                    only learn the precise way to register voters on the ECI’s platform, but also gain
+                                    knowledge of the youth rights movement in India, its importance in the 21st century and
+                                    learn to speak confidently of these to your peers!
 
-Make a difference in India’s youth vote
-Young India Foundation welcomes you to its first one of kind free course to becoming training facilitators on Youth Rights & Electoral Democracy. We believe that young people have the ability to play a larger role through civic participation and bringing forth change through their actions.
+                                    <br><br>
 
-</p>
+                                    Make a difference in India’s youth vote
+                                    Young India Foundation welcomes you to its first one of kind free course to becoming
+                                    training facilitators on Youth Rights & Electoral Democracy. We believe that young
+                                    people have the ability to play a larger role through civic participation and bringing
+                                    forth change through their actions.
+
+                                </p>
                             </div>
 
                             <div class="b3 section-title subtitle">
-                                <h6 class="title">This online course named is offered solely online by Young India Foundation's Centre for Youth Policy, but is not equivalent to an on-campus course. 
-It does not confer a University grade, course credits or a degree, and does not hold and/or guarantee affiliation of the recipient with the Election Commission of India</h6>
+                                <h6 class="title">This online course named is offered solely online by Young India
+                                    Foundation's Centre for Youth Policy, but is not equivalent to an on-campus course.
+                                    It does not confer a University grade, course credits or a degree, and does not hold
+                                    and/or guarantee affiliation of the recipient with the Election Commission of India</h6>
                             </div>
 
-                           
+
 
                             <div class="read-more-btn mt--40">
                                 <a class="rbt-moderbt-btn" href="#">
                                     <span class="moderbt-btn-text">Register Now</span>
-                                   
+
                                     <i class="feather-arrow-right"></i>
                                 </a>
                             </div>
@@ -136,21 +144,21 @@ It does not confer a University grade, course credits or a degree, and does not 
                     <div class="inner">
                         <div class="section-title text-center mb--60">
                             <h2 class="title color-white">Reimagining Facilitation in Youth Rights & Electoral Democracy
-</h2>
+                            </h2>
                             <div class="rbt-button-group mt--30">
                                 <a class="rbt-btn btn-gradient hover-icon-reverse" href="#expcourse">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Explore Course</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
                                 </a>
 
                                 <a class="rbt-btn hover-icon-reverse btn-border color-white-off" href="#reviews">
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Read Reviews</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                     </span>
                                 </a>
                             </div>
@@ -168,7 +176,10 @@ It does not confer a University grade, course credits or a degree, and does not 
                                         <div class="content">
                                             <span class="rbt-badge-6 bg-secondary-opacity">Excited to become a YETI?</span>
                                             <h2 class="title mt--10">Make a difference in India’s youth vote</h2>
-                                            <p>Young India Foundation welcomes you to its first one of kind free course to becoming training facilitators on Youth Rights & Electoral Democracy. We believe that young people have the ability to play a larger role through civic participation and bringing forth change through their actions. </p>
+                                            <p>Young India Foundation welcomes you to its first one of kind free course to
+                                                becoming training facilitators on Youth Rights & Electoral Democracy. We
+                                                believe that young people have the ability to play a larger role through
+                                                civic participation and bringing forth change through their actions. </p>
                                             <ul class="course-feature-list">
                                                 <li>
                                                     <div class="icon">
@@ -210,8 +221,10 @@ It does not confer a University grade, course credits or a degree, and does not 
                                         </div>
                                         <div class="content">
                                             <h2 class="title">Get a Certificate</h2>
-                                            <p>Course Duration: 1 week to 1 month, dependent on your personal pace of learning and availability.<br>Course registration starts: 12 August 2023, 1 p.m.</p>
-                                            
+                                            <p>Course Duration: 1 week to 1 month, dependent on your personal pace of
+                                                learning and availability.<br>Course registration starts: 12 August 2023, 1
+                                                p.m.</p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -260,13 +273,20 @@ It does not confer a University grade, course credits or a degree, and does not 
                                         </div>
                                         <div class="content">
                                             <h2 class="title">On your journey to be a YETI you will learn:</h2>
-                                            
+
                                             <ul class="rbt-list-style-2 flex-wrap">
-                                                <li><i class="feather-check"></i>A crash course on Youth Rights in India that will showcase the modern and current scenario of the youth in the nation as well as the lack of representation.</li>
-                                                <li><i class="feather-check"></i>The process of how to register yourself and your peers to vote and updates on all the changes around the electoral process</li>
-                                                <li><i class="feather-check"></i>How to hold engaging conversations on the participation of youth and ways that young people can hold such spaces around them which are inclusive and diverse</li>
-                                                <li><i class="feather-check"></i>What civic engagement means for young India, how we can create platforms for engagement</li>
-                                                
+                                                <li><i class="feather-check"></i>A crash course on Youth Rights in India
+                                                    that will showcase the modern and current scenario of the youth in the
+                                                    nation as well as the lack of representation.</li>
+                                                <li><i class="feather-check"></i>The process of how to register yourself
+                                                    and your peers to vote and updates on all the changes around the
+                                                    electoral process</li>
+                                                <li><i class="feather-check"></i>How to hold engaging conversations on the
+                                                    participation of youth and ways that young people can hold such spaces
+                                                    around them which are inclusive and diverse</li>
+                                                <li><i class="feather-check"></i>What civic engagement means for young
+                                                    India, how we can create platforms for engagement</li>
+
                                             </ul>
                                         </div>
                                     </div>
@@ -291,11 +311,13 @@ It does not confer a University grade, course credits or a degree, and does not 
                     <div class="section-title text-start">
                         <h2 class="title">Here’s how the course works - </h2>
                         <p class="description has-small-font-size mt--10">
-                            <ul>
-                                <li>Watch our videos taught by young people like yourself who are passionate about civic engagement and youth rights</li>
-                                <li>Take 3 quizzes based on what you learn</li>
-                                <li>Post the quizzes, you will then interact with our team and become a certified YETI instructor</li>
-                            </ul>
+                        <ul>
+                            <li>Watch our videos taught by young people like yourself who are passionate about civic
+                                engagement and youth rights</li>
+                            <li>Take 3 quizzes based on what you learn</li>
+                            <li>Post the quizzes, you will then interact with our team and become a certified YETI
+                                instructor</li>
+                        </ul>
                         </p>
                     </div>
                 </div>
@@ -305,16 +327,18 @@ It does not confer a University grade, course credits or a degree, and does not 
                     <div class="feature-course-thumbnail">
                         <div class="video-popup-wrapper rbt-shadow-box">
                             <img class="w-100 radius-10" src="assets/images/ytthumb.jpeg" alt="Card image">
-                            <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation btn-white-color" href="https://www.youtube.com/watch?v=8U7b2FAsVEo">
+                            <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation btn-white-color"
+                                href="https://www.youtube.com/watch?v=8U7b2FAsVEo">
                                 <span class="play-icon"></span>
                             </a>
                         </div>
                         <div class="enroll-btn mt--15">
-                            <a class="rbt-btn btn-gradient hover-icon-reverse w-100 radius-round" href="{{url('profile')}}">
+                            <a class="rbt-btn btn-gradient hover-icon-reverse w-100 radius-round"
+                                href="{{ url('profile') }}">
                                 <span class="icon-reverse-wrapper">
                                     <span class="btn-text">Continue Course</span>
-                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                 </span>
                             </a>
                         </div>
@@ -326,43 +350,49 @@ It does not confer a University grade, course credits or a degree, and does not 
                             <div class="accordion" id="accordionExampleb2">
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo1">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo1" aria-expanded="false"
+                                            aria-controls="collapseTwo1">
                                             Being Young in India
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo1" class="accordion-collapse collapse show" aria-labelledby="headingTwo1" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo1" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingTwo1" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
 
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">An introduction to YIF and why we started</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">An
+                                                                introduction to YIF and why we started</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
-                                                        
+
                                                     </a></li>
 
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">A brief overview of the current state of the youth in India</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                           <i class="feather-lock"></i>
-                                                        </div>
-                                                        
-                                                    </a></li>
-
-                                                <li><a>
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span class="text">What is YETI?</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">A
+                                                                brief overview of the current state of the youth in
+                                                                India</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
-                                                        
+
+                                                    </a></li>
+
+                                                <li><a>
+                                                        <div class="course-content-left">
+                                                            <i class="feather-play-circle"></i> <span class="text">What
+                                                                is YETI?</span>
+                                                        </div>
+                                                        <div class="course-content-right only-lock">
+                                                            <i class="feather-lock"></i>
+                                                        </div>
+
                                                     </a></li>
 
                                             </ul>
@@ -372,23 +402,26 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo2">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo2" aria-expanded="false"
+                                            aria-controls="collapseTwo2">
                                             The Demographic Dividend
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo2" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo2" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">A brief overview</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">A
+                                                                brief overview</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                               
+
                                             </ul>
                                         </div>
                                     </div>
@@ -396,23 +429,26 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo3">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo3"
+                                            aria-expanded="false" aria-controls="collapseTwo3">
                                             State of the Youth
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo3" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo3" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">How the Indian youth is doing</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">How
+                                                                the Indian youth is doing</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                
+
                                             </ul>
                                         </div>
                                     </div>
@@ -420,11 +456,14 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo4">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo4"
+                                            aria-expanded="false" aria-controls="collapseTwo4">
                                             Gerontocracy and Ageism
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo4" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo4" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
                                                 <li><a>
@@ -436,7 +475,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                 <li><a>
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">Applications in the Indian Polity</span>
@@ -445,7 +484,7 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                             
+
                                             </ul>
                                         </div>
                                     </div>
@@ -453,17 +492,20 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo5">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo5"
+                                            aria-expanded="false" aria-controls="collapseTwo5">
                                             India’s Crisis of Political Representation
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo5" class="accordion-collapse collapse" aria-labelledby="headingTwo5" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo5" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo5" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">Lok Sabha/Rajya Sabha</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">Lok
+                                                                Sabha/Rajya Sabha</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -472,7 +514,8 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                 <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Youngest electorate – oldest parliament + LS have only been getting older</span>
+                                                                class="text">Youngest electorate – oldest parliament + LS
+                                                                have only been getting older</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -481,13 +524,14 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                 <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Comparison of average ages of India v/s the LS</span>
+                                                                class="text">Comparison of average ages of India v/s the
+                                                                LS</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                               
+
                                             </ul>
                                         </div>
                                     </div>
@@ -495,17 +539,20 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo6">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo6" aria-expanded="false" aria-controls="collapseTwo6">
-                                           #Why25
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo6"
+                                            aria-expanded="false" aria-controls="collapseTwo6">
+                                            #Why25
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo6" class="accordion-collapse collapse" aria-labelledby="headingTwo6" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo6" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo6" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">The Age of Candidacy (with world comparisons)</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">The
+                                                                Age of Candidacy (with world comparisons)</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -513,16 +560,16 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                     </a></li>
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">Age and Experience</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">Age
+                                                                and Experience</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                
 
-                                               
+
+
                                             </ul>
                                         </div>
                                     </div>
@@ -530,11 +577,14 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo7">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo7" aria-expanded="false" aria-controls="collapseTwo7">
-                                           Voting and Civic Engagement
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo7"
+                                            aria-expanded="false" aria-controls="collapseTwo7">
+                                            Voting and Civic Engagement
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo7" class="accordion-collapse collapse" aria-labelledby="headingTwo7" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo7" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo7" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
                                                 <li><a>
@@ -549,13 +599,14 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                 <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Probable causes (moving as students, lack of info, etc.)</span>
+                                                                class="text">Probable causes (moving as students, lack of
+                                                                info, etc.)</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                 <li><a>
+                                                <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
                                                                 class="text">International Comparison</span>
@@ -564,17 +615,17 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                 <li><a>
+                                                <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">2019 v/s the 90 million gap</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">2019
+                                                                v/s the 90 million gap</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                    
-                                                
+
+
 
                                             </ul>
                                         </div>
@@ -583,11 +634,14 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo8">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo8" aria-expanded="false" aria-controls="collapseTwo8">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo8"
+                                            aria-expanded="false" aria-controls="collapseTwo8">
                                             The Student Vote
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo8" class="accordion-collapse collapse" aria-labelledby="headingTwo8" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo8" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo8" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
                                                 <li><a>
@@ -602,14 +656,15 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                 <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Polling booths in colleges and universities</span>
+                                                                class="text">Polling booths in colleges and
+                                                                universities</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                
-                                               
+
+
                                             </ul>
                                         </div>
                                     </div>
@@ -617,17 +672,29 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo9">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo9" aria-expanded="false" aria-controls="collapseTwo9">
-                                            The First Step - #GetInked 
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo9"
+                                            aria-expanded="false" aria-controls="collapseTwo9">
+                                            The First Step - #GetInked
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo9" class="accordion-collapse collapse" aria-labelledby="headingTwo9" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo9" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo9" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">An EPIC</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">An
+                                                                EPIC</span>
+                                                        </div>
+                                                        <div class="course-content-right only-lock">
+                                                            <i class="feather-lock"></i>
+                                                        </div>
+                                                    </a></li>
+                                                <li><a>
+                                                        <div class="course-content-left">
+                                                            <i class="feather-play-circle"></i> <span class="text">Voter
+                                                                Portal + Voter registration</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -636,7 +703,8 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                 <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Voter Portal + Voter registration</span>
+                                                                class="text">Follow-ups + checking your BLO/next
+                                                                election</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -644,26 +712,18 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                     </a></li>
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">Follow-ups + checking your BLO/next election</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">Are
+                                                                you a student/young professional? Re-registration
+                                                                form</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                                <li><a>
-                                                        <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">Are you a student/young professional? Re-registration form</span>
-                                                        </div>
-                                                        <div class="course-content-right only-lock">
-                                                            <i class="feather-lock"></i>
-                                                        </div>
-                                                    </a></li>
-                                               
 
 
-                                               
+
+
                                             </ul>
                                         </div>
                                     </div>
@@ -671,17 +731,20 @@ It does not confer a University grade, course credits or a degree, and does not 
 
                                 <div class="accordion-item card">
                                     <h2 class="accordion-header card-header" id="headingTwo10">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo10" aria-expanded="false" aria-controls="collapseTwo10">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo10"
+                                            aria-expanded="false" aria-controls="collapseTwo10">
                                             Getting out there!
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo10" class="accordion-collapse collapse" aria-labelledby="headingTwo10" data-bs-parent="#accordionExampleb2">
+                                    <div id="collapseTwo10" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo10" data-bs-parent="#accordionExampleb2">
                                         <div class="accordion-body card-body">
                                             <ul class="rbt-course-main-content liststyle">
                                                 <li><a>
                                                         <div class="course-content-left">
-                                                            <i class="feather-play-circle"></i> <span
-                                                                class="text">How to: have that conversation - Do’s and Don'ts</span>
+                                                            <i class="feather-play-circle"></i> <span class="text">How
+                                                                to: have that conversation - Do’s and Don'ts</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -690,7 +753,8 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                 <li><a>
                                                         <div class="course-content-left">
                                                             <i class="feather-play-circle"></i> <span
-                                                                class="text">Community engagement + ideas to implement locally</span>
+                                                                class="text">Community engagement + ideas to implement
+                                                                locally</span>
                                                         </div>
                                                         <div class="course-content-right only-lock">
                                                             <i class="feather-lock"></i>
@@ -705,15 +769,15 @@ It does not confer a University grade, course credits or a degree, and does not 
                                                             <i class="feather-lock"></i>
                                                         </div>
                                                     </a></li>
-                                               
 
 
-                                               
+
+
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -747,13 +811,14 @@ It does not confer a University grade, course credits or a degree, and does not 
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
                             <div class="icons">
-                                
+
                             </div>
                             <div class="description">
                                 <br>
-                                <p class="subtitle-3">I took the course and watched the videos based on a friend’s suggestion and I must say that it was extremely informative and a lot of fun</p>
+                                <p class="subtitle-3">I took the course and watched the videos based on a friend’s
+                                    suggestion and I must say that it was extremely informative and a lot of fun</p>
                                 <div class="clint-info-wrapper">
-                                    
+
                                     <div class="client-info">
                                         <h5 class="title">Parth Gaikwad</h5>
                                     </div>
@@ -768,12 +833,14 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            
+
                             <div class="description">
                                 <br>
-                                <p class="subtitle-3">The course was a lot more interesting than I’d thought. The videos were short and well-explained to create awareness about voting and its entire process.</p>
+                                <p class="subtitle-3">The course was a lot more interesting than I’d thought. The videos
+                                    were short and well-explained to create awareness about voting and its entire process.
+                                </p>
                                 <div class="clint-info-wrapper">
-                                    
+
                                     <div class="client-info">
                                         <h5 class="title">Kartik Gupta</h5>
                                     </div>
@@ -788,14 +855,16 @@ It does not confer a University grade, course credits or a degree, and does not 
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            
+
                             <div class="description">
                                 <br>
                                 <p class="subtitle-3">Voting 101:
-Voting has now been demystified for me. As a young person, I found it very informative and interesting. Highly recommend it for people enthusiastic about civic engagement and youth participation.
-</p>
+                                    Voting has now been demystified for me. As a young person, I found it very informative
+                                    and interesting. Highly recommend it for people enthusiastic about civic engagement and
+                                    youth participation.
+                                </p>
                                 <div class="clint-info-wrapper">
-                                    
+
                                     <div class="client-info">
                                         <h5 class="title">Rakesh Jena</h5>
                                     </div>
@@ -810,12 +879,13 @@ Voting has now been demystified for me. As a young person, I found it very infor
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            
+
                             <div class="description">
                                 <br>
-                                <p class="subtitle-3">I’ve never found politics engaging but this is a fun way to learn civic engagement and how to register voters.</p>
+                                <p class="subtitle-3">I’ve never found politics engaging but this is a fun way to learn
+                                    civic engagement and how to register voters.</p>
                                 <div class="clint-info-wrapper">
-                                    
+
                                     <div class="client-info">
                                         <h5 class="title">Lavanya Ashok</h5>
                                     </div>
@@ -825,7 +895,7 @@ Voting has now been demystified for me. As a young person, I found it very infor
                     </div>
                 </div>
                 <!-- End Single Testimonial  -->
-                
+
             </div>
         </div>
 
@@ -836,12 +906,12 @@ Voting has now been demystified for me. As a young person, I found it very infor
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                           
+
                             <div class="description">
                                 <br>
                                 <p class="subtitle-3">I wish this course existed when I was 18!</p>
                                 <div class="clint-info-wrapper">
-                                    
+
                                     <div class="client-info">
                                         <h5 class="title">Pratiksha Chaukhande</span></h5>
                                     </div>
@@ -856,12 +926,13 @@ Voting has now been demystified for me. As a young person, I found it very infor
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            
+
                             <div class="description">
                                 <br>
-                                <p class="subtitle-3">I never thought that I could register myself as a voter but now I can do it for me as well as the people around me, all because of the YETI course</p>
+                                <p class="subtitle-3">I never thought that I could register myself as a voter but now I can
+                                    do it for me as well as the people around me, all because of the YETI course</p>
                                 <div class="clint-info-wrapper">
-                                    
+
                                     <div class="client-info">
                                         <h5 class="title">Hiten Patel</span></h5>
                                     </div>
@@ -876,12 +947,13 @@ Voting has now been demystified for me. As a young person, I found it very infor
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            
+
                             <div class="description">
                                 <br>
-                                <p class="subtitle-3">The best part is that after becoming a YETI, I can now volunteer at interesting events at my convenience and put my knowledge to use.</p>
+                                <p class="subtitle-3">The best part is that after becoming a YETI, I can now volunteer at
+                                    interesting events at my convenience and put my knowledge to use.</p>
                                 <div class="clint-info-wrapper">
-                                    
+
                                     <div class="client-info">
                                         <h5 class="title">Vikas Seemwal</h5>
                                     </div>
@@ -896,14 +968,17 @@ Voting has now been demystified for me. As a young person, I found it very infor
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            
+
                             <div class="description">
                                 <br>
                                 <p class="subtitle-3">From Classroom to Voting Booth:
-This course bridges the gap between classroom learning and active citizenship. It provides an essential toolkit for young individuals like me to navigate the world of elections, advocacy, and policy-making. A valuable resource for us to make our voices heard.
-</p>
+                                    This course bridges the gap between classroom learning and active citizenship. It
+                                    provides an essential toolkit for young individuals like me to navigate the world of
+                                    elections, advocacy, and policy-making. A valuable resource for us to make our voices
+                                    heard.
+                                </p>
                                 <div class="clint-info-wrapper">
-                                    
+
                                     <div class="client-info">
                                         <h5 class="title">Nikita Bhopale</span></h5>
                                     </div>
@@ -918,12 +993,15 @@ This course bridges the gap between classroom learning and active citizenship. I
                 <div class="single-column-20 bg-theme-gradient-odd">
                     <div class="rbt-testimonial-box style-2">
                         <div class="inner">
-                            
+
                             <div class="description">
                                 <br>
-                                <p class="subtitle-3">An eye-opening course that delves into the history, challenges, and triumphs of youth rights in the realm of voting. Engaging content and interactive modules make learning about civic engagement an enjoyable experience. Prepare to be inspired!</p>
+                                <p class="subtitle-3">An eye-opening course that delves into the history, challenges, and
+                                    triumphs of youth rights in the realm of voting. Engaging content and interactive
+                                    modules make learning about civic engagement an enjoyable experience. Prepare to be
+                                    inspired!</p>
                                 <div class="clint-info-wrapper">
-                                    
+
                                     <div class="client-info">
                                         <h5 class="title">Rounak Kumar Choudhary</h5>
                                     </div>
@@ -938,9 +1016,9 @@ This course bridges the gap between classroom learning and active citizenship. I
     </div>
     <!-- End Testimonial Area  -->
 
-    
 
-    
+
+
 
     <!-- Start Newsletter Area  -->
     <div class="rbt-newsletter-area bg-color-white rbt-section-gap">
@@ -953,9 +1031,9 @@ This course bridges the gap between classroom learning and active citizenship. I
                             <input class="rbt-border" type="email" placeholder="Enter Your E-Email">
                             <button type="submit" class="rbt-btn btn-md btn-gradient hover-icon-reverse radius-round">
                                 <span class="icon-reverse-wrapper">
-                <span class="btn-text">Subscribe</span>
-                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    <span class="btn-text">Subscribe</span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                 </span>
                             </button>
                         </form>

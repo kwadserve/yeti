@@ -70,9 +70,15 @@ Route::middleware('auth')->group(function () {
     Route::get('/logout', [AuthController::class, 'logout']);
 });
 
-Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('/admin', function () {
-        return view('admin.user.list');
+Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
+    Route::get('/', function(){
+        return view('admin.dashboard');
+    });
+    Route::controller(UserController::class)->group(function () {
+        Route::get('/users', 'userList');
+        Route::get('/users/{id}', 'userInfo');
+        Route::post('/users/{id}', 'userUpdate');
+        Route::get('/users/{id}/edit', 'userEdit');
     });
 });
 
