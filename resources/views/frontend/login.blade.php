@@ -1,5 +1,6 @@
 @extends('frontend.layout')
 @section('content')
+    <a class="close_side_menu" href="javascript:void(0);"></a>
     <div class="rbt-elements-area bg-color-white rbt-section-gap">
         <div class="container">
             <div class="row">

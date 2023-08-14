@@ -56,6 +56,8 @@ Route::middleware('auth')->group(function () {
         Route::get('/settings', 'setting');
         Route::get('/dashboard', 'dashboard');
         Route::post('/update-profile', 'update_profile');
+        Route::post('/update-password', 'update_password');
+        Route::post('/update-social', 'update_social');
     });
     Route::controller(CourseController::class)->group(function () {
         Route::get('/course', 'course');

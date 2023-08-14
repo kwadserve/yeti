@@ -1,5 +1,6 @@
 @extends('frontend.layout')
 @section('content')
+    <a class="close_side_menu" href="javascript:void(0);"></a>
     <div class="rbt-error-area bg-gradient-11 rbt-section-gap">
         <div class="error-area">
             <div class="container">
@@ -8,7 +9,7 @@
                         <h1 class="title">404!</h1>
                         <h3 class="sub-title">Page not found</h3>
                         <p>The page you were looking for could not be found.</p>
-                        <a class="rbt-btn btn-gradient icon-hover" href="index.html">
+                        <a class="rbt-btn btn-gradient icon-hover" href="{{ url('/') }}">
                             <span class="btn-text">Back To Home</span>
                             <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                         </a>

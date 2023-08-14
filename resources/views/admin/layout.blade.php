@@ -8,6 +8,7 @@
     <title>@yield('title')</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <!-- Favicons -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ url('assets/images/faviconyif.png') }}">
@@ -26,12 +27,13 @@
     <!-- Template Main CSS File -->
     <link href="{{ url('extra/css/style.css') }}" rel="stylesheet" />
 </head>
+<?php $avatar = App\Http\Controllers\UserController::get_meta(Auth::id(), 'avatar'); ?>
 
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
         <div class="d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="{{ url('/') }}" class="logo d-flex align-items-center">
                 <img src="{{ url('assets/images/yiflogodark.png') }}" alt="YIF Logo" />
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -43,7 +45,12 @@
                 <li class="nav-item dropdown pe-3">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#"
                         data-bs-toggle="dropdown">
-                        <img src="{{ url('extra/img/profile-img.jpg') }}" alt="Profile" class="rounded-circle" />
+                        @if ($avatar)
+                            <img src="{{ url('avatar/' . $avatar) }}" alt="Instructor" class="rounded-circle">
+                        @else
+                            <img src="{{ url('https://cdn-icons-png.flaticon.com/512/6596/6596121.png') }}"
+                                alt="Instructor" class="rounded-circle">
+                        @endif
                         <span class="d-none d-md-block dropdown-toggle ps-2">{{ Auth::user()->name }}</span>
                     </a><!-- End Profile Iamge Icon -->
 

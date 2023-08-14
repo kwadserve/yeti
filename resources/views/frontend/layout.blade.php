@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
     <script src="https://www.youtube.com/iframe_api"></script>
 </head>
+<?php $avatar = App\Http\Controllers\UserController::get_meta(Auth::id(), 'avatar'); ?>
 
 <body class="rbt-header-sticky">
     <!-- Start Header Area -->
@@ -71,12 +72,26 @@
                                 </li>
                             @else
                                 <li class="account-access rbt-user-wrapper d-none d-xl-block">
-                                    <a href="#"><i class="feather-user"></i>{{ strtok(Auth::user()->name, ' ') }}</a>
+                                    <a href="#">
+                                        @if ($avatar)
+                                            <img src="{{ url('avatar/' . $avatar) }}" width="35" alt="Instructor">
+                                        @else
+                                            <img width="35"
+                                                src="{{ url('https://cdn-icons-png.flaticon.com/512/6596/6596121.png') }}"
+                                                alt="Instructor">
+                                        @endif
+                                        {{ strtok(Auth::user()->name, ' ') }}
+                                    </a>
                                     <div class="rbt-user-menu-list-wrapper">
                                         <div class="inner">
                                             <div class="rbt-admin-profile">
                                                 <div class="admin-thumbnail">
-                                                    <img src="assets/images/team/avatar.jpg" alt="User Images">
+                                                    @if ($avatar)
+                                                        <img src="{{ url('avatar/' . $avatar) }}" alt="Instructor">
+                                                    @else
+                                                        <img src="{{ url('https://cdn-icons-png.flaticon.com/512/6596/6596121.png') }}"
+                                                            alt="Instructor">
+                                                    @endif
                                                 </div>
                                                 <div class="admin-info">
                                                     <span class="name">{{ Auth::user()->name }}</span>
@@ -86,9 +101,15 @@
                                             </div>
                                             <ul class="user-list-wrapper">
                                                 <li>
-                                                    <a href="{{ url('profile') }}">
+                                                    <a href="{{ url('dashboard') }}">
                                                         <i class="feather-home"></i>
                                                         <span>My Dashboard</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ url('settings') }}">
+                                                        <i class="feather-settings"></i>
+                                                        <span>Settings</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -111,7 +132,12 @@
                                         <div class="inner">
                                             <div class="rbt-admin-profile">
                                                 <div class="admin-thumbnail">
-                                                    <img src="assets/images/team/avatar.jpg" alt="User Images">
+                                                    @if ($avatar)
+                                                        <img src="{{ url('avatar/' . $avatar) }}" alt="Instructor">
+                                                    @else
+                                                        <img src="{{ url('https://cdn-icons-png.flaticon.com/512/6596/6596121.png') }}"
+                                                            alt="Instructor">
+                                                    @endif
                                                 </div>
                                                 <div class="admin-info">
                                                     <span class="name">{{ Auth::user()->name }}</span>
@@ -121,9 +147,15 @@
                                             </div>
                                             <ul class="user-list-wrapper">
                                                 <li>
-                                                    <a href="{{ url('profile') }}">
+                                                    <a href="{{ url('dashboard') }}">
                                                         <i class="feather-home"></i>
                                                         <span>My Dashboard</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ url('settings') }}">
+                                                        <i class="feather-settings"></i>
+                                                        <span>Settings</span>
                                                     </a>
                                                 </li>
                                             </ul>

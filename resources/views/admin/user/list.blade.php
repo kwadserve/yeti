@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('title')
-    Users List
+    Users | YIF | Youth Electoral Trained Instructor
 @endsection
 @section('content')
     <div class="pagetitle">
@@ -21,18 +21,24 @@
                                     <th scope="col">Name</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Registered</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $count = 1;?>
-                                @foreach($users as $user)
-                                <tr>
-                                    <th scope="row">{{$count}}</th>
-                                    <td>{{$user->name}}</td>
-                                    <td>{{$user->email}}</td>
-                                    <td>{{$user->created_at}}</td>
-                                </tr>
-                                <?php $count++; ?>
+                                <?php $count = 1; ?>
+                                @foreach ($users as $user)
+                                    <tr>
+                                        <th scope="row">{{ $count }}</th>
+                                        <td>{{ $user->name }}</td>
+                                        <td>{{ $user->email }}</td>
+                                        <td>{{ date('d M Y', strtotime($user->created_at)) }}</td>
+                                        <td>
+                                            <a href="{{url('admin/users/'.$user->id)}}" class="btn btn-sm rounded-pill btn-success">
+                                                <i class="bi bi-eye"></i> View
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <?php $count++; ?>
                                 @endforeach
                             </tbody>
                         </table>

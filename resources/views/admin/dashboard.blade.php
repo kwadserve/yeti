@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('title')
-    Dashboard
+    YIF | Youth Electoral Trained Instructor
 @endsection
 @section('content')
     <div class="pagetitle">
