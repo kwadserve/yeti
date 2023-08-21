@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\UserMeta;
 use App\Models\Video;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -49,5 +50,47 @@ class CourseController extends Controller
         $videoId->update(['meta_value' => (int)$videoId->first()->meta_value + 1]);
         $videoTime = UserMeta::where('user_id', Auth::id())->where('meta_key', 'last_video_time');
         $videoTime->update(['meta_value' => 0]);
+    }
+
+    //Book Schedule
+    public function schedule()
+    {
+        $resultDate = UserMeta::where('user_id', Auth::id())->where('meta_key', 'result_date')->first();
+        return view('frontend.course.schedule', compact('resultDate'));
+    }
+
+    //Calender
+    public function calendar($date)
+    {
+        $date = new Carbon($date);
+        $startOfCalendar = $date->copy()->startOfWeek(Carbon::SUNDAY);
+        $endOfCalendar = $date->copy()->addDays(30)->endOfWeek(Carbon::SATURDAY);
+
+        $html = '<div class="calendar">';
+
+        $html .= '<div class="month-year">';
+        $html .= '<span class="month">' . $date->format('M') . '-'.$endOfCalendar->format('M').'</span>';
+        $html .= '<span class="year">' . $date->format('Y') . '</span>';
+        $html .= '</div>';
+
+        $html .= '<div class="days">';
+
+        $dayLabels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        foreach ($dayLabels as $dayLabel)
+        {
+            $html .= '<span class="day-label">' . $dayLabel . '</span>';
+        }
+
+        while($startOfCalendar <= $endOfCalendar)
+        {
+            $extraClass = $startOfCalendar->format('j') < $date->format('j') ? 'dull' : '';
+            $extraClass = $startOfCalendar->format('j') > $date->copy()->addDays(30)->format('j') ? 'dull' : '';
+            $extraClass .= $startOfCalendar->isToday() ? ' today' : '';
+
+            $html .= '<span class="day '.$extraClass.'"><span class="content">' . $startOfCalendar->format('j') . '</span></span>';
+            $startOfCalendar->addDay();
+        }
+        $html .= '</div></div>';
+        return $html;
     }
 }

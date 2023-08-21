@@ -62,6 +62,7 @@ Route::middleware('auth')->group(function () {
     });
     Route::controller(CourseController::class)->group(function () {
         Route::get('/course', 'course');
+        Route::get('/schedule', 'schedule');
         Route::post('/update_duration', 'update_duration');
         Route::post('/next_video', 'next_video');
     });

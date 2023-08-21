@@ -16,7 +16,11 @@ class QuizController extends Controller
         $user =  Auth::user();
         $test = UserMeta::where('user_id', $user->id)->where('meta_key', 'current_test')->first();
         $questions = Question::where('test', (int)$test->meta_value)->get();
-        return view('frontend.course.quiz', compact('questions', 'test'));
+
+        if($user->course_status === 'completed')
+            return redirect()->to('schedule');
+        else
+            return view('frontend.course.quiz', compact('questions', 'test'));
     }
 
     //Result
@@ -25,7 +29,11 @@ class QuizController extends Controller
         $user =  Auth::user();
         $test = UserMeta::where('user_id', $user->id)->where('meta_key', 'current_test')->first();
         $questions = Question::where('test', (int)$test->meta_value)->get();
-        return view('frontend.course.result', compact('questions', 'test'));
+        
+        if($user->course_status === 'completed')
+            return redirect()->to('schedule');
+        else
+            return view('frontend.course.result', compact('questions', 'test'));
     }
 
     //Submit Quiz
@@ -43,7 +51,7 @@ class QuizController extends Controller
             }
         }
         $test = UserMeta::where('user_id', $user->id)->where('meta_key', 'current_test');
-        if((int)$test->first()->meta_value < 3)
+        if((int)$test->first()->meta_value <= 3)
         
         return redirect()->to('result');
     }

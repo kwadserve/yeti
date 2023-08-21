@@ -88,6 +88,7 @@
                 @else
                     <?php
                     $update = App\Models\UserMeta::where('user_id', Auth::id())->where('meta_key', 'current_test');
+                    
                     $newTest = (int) $test->meta_value + 1;
                     $update->update([
                         'meta_value' => $newTest,
@@ -101,10 +102,23 @@
                     $videoTime = App\Models\UserMeta::where('user_id', Auth::id())
                         ->where('meta_key', 'last_video_time')
                         ->update(['meta_value' => 0]);
+                    $resultTime = App\Models\UserMeta::where('user_id', Auth::id())
+                        ->updateOrCreate(['meta_key', 'result_date'],['meta_value' => \Carbon\Carbon::now()->toDateTimeString()]);
                     ?>
-                    <a class="rbt-btn icon-hover btn-md" href="{{ url('course') }}">
-                        <span class="btn-text">Next</span>
-                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                    @if ($newTest == 4)
+                        <?php
+                        $user = App\Models\User::where('id', Auth::id());
+                        $user->update([
+                            'course_status' => 'completed',
+                        ]);
+                        
+                        ?>
+                        <a class="rbt-btn icon-hover btn-md" href="{{ url('course') }}">
+                        @else
+                            <a class="rbt-btn icon-hover btn-md" href="{{ url('course') }}">
+                    @endif
+                    <span class="btn-text">Next</span>
+                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                     </a>
                 @endif
 
