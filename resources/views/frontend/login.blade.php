@@ -41,7 +41,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="rbt-lost-password text-end">
-                                            <a class="rbt-btn-link" href="#">Lost your password?</a><br> <a
+                                            <a class="rbt-btn-link" href="{{url('forgot-password')}}">Lost your password?</a><br> <a
                                                 class="rbt-btn-link" href="{{ url('register') }}">Dont have an account?
                                                 Create Now.</a>
                                         </div>

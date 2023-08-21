@@ -5,6 +5,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,3 +89,16 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
 Route::fallback(function () {
     return view('404');
 });
+
+//Forgot Password
+Route::get('/forgot-password', function () {
+    return view('frontend.forgot-password');
+})->middleware('guest')->name('password.request');
+
+Route::post('/forgot-password', [AuthController::class, 'forgot_password'])->middleware('guest')->name('password.email');
+
+Route::get('/reset-password/{token}', function ($token) {
+    return view('frontend.reset-password', ['token' => $token]);
+})->middleware('guest')->name('password.reset');
+
+Route::post('/reset-password', [AuthController::class, 'reset_password'])->middleware('guest')->name('password.update');
