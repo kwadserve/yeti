@@ -20,6 +20,7 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Email</th>
+                                    <th scope="col">Course</th>
                                     <th scope="col">Registered</th>
                                     <th>Action</th>
                                 </tr>
@@ -31,9 +32,19 @@
                                         <th scope="row">{{ $count }}</th>
                                         <td>{{ $user->name }}</td>
                                         <td>{{ $user->email }}</td>
+                                        <td>
+                                            @if ($user->course_status == 'completed')
+                                                <span
+                                                    class="badge rounded-pill bg-success">{{ $user->course_status }}</span>
+                                            @else
+                                                <span
+                                                    class="badge rounded-pill bg-primary">{{ $user->course_status }}</span>
+                                            @endif
+                                        </td>
                                         <td>{{ date('d M Y', strtotime($user->created_at)) }}</td>
                                         <td>
-                                            <a href="{{url('admin/users/'.$user->id)}}" class="btn btn-sm rounded-pill btn-success">
+                                            <a href="{{ url('admin/users/' . $user->id) }}"
+                                                class="btn btn-sm rounded-pill btn-success">
                                                 <i class="bi bi-eye"></i> View
                                             </a>
                                         </td>

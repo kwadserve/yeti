@@ -63,6 +63,8 @@ Route::middleware('auth')->group(function () {
     Route::controller(CourseController::class)->group(function () {
         Route::get('/course', 'course');
         Route::get('/schedule', 'schedule');
+        Route::get('/interview', 'interview');
+        Route::post('/book_interview', 'book_interview');
         Route::post('/update_duration', 'update_duration');
         Route::post('/next_video', 'next_video');
     });

@@ -61,4 +61,11 @@
             }
         });
     }
+
+    $('.day.active').on('click', function(e){        
+        var date = $(this).data('date')
+        $('#interview').val(date)
+        $('#interview-content').empty().append('You have selected <strong>'+ $(this).data('js') +'</strong> as your interview date.')
+        $('#interview-booking-form').show()
+    })
 })(window, document, jQuery);

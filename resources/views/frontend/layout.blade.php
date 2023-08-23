@@ -85,12 +85,17 @@
             flex-basis: calc(14.286% - 2px);
             margin: 1px;
             border-radius: 999px;
-            cursor: pointer;
             font-weight: 300;
         }
 
         .day.dull {
             color: #94A3B8;
+        }
+
+        .day.active {
+            color: #067910;
+            font-weight: 600;
+            cursor: pointer;
         }
 
         .day.today {
@@ -482,6 +487,7 @@
     <script src="{{ url('assets/js/vendor/plyr.js') }}"></script>
     <!-- Main JS -->
     <script src="{{ url('assets/js/main.js') }}"></script>
+    <script src="{{ url('assets/js/custom.js') }}"></script>
 </body>
 
 </html>
