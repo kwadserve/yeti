@@ -103,7 +103,7 @@
                         ->where('meta_key', 'last_video_time')
                         ->update(['meta_value' => 0]);
                     $resultTime = App\Models\UserMeta::where('user_id', Auth::id())
-                        ->updateOrCreate(['meta_key', 'result_date'],['meta_value' => \Carbon\Carbon::now()->toDateTimeString()]);
+                        ->updateOrCreate(['meta_key' => 'result_date'],['meta_value' => \Carbon\Carbon::now()->toDateTimeString()]);
                     ?>
                     @if ($newTest == 4)
                         <?php
