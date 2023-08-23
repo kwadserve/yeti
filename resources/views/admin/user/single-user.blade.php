@@ -120,8 +120,13 @@
                                     </div>
                                     @if (App\Http\Controllers\UserController::get_meta($user->id, 'interview_status') == 'pending')
                                         <div class="row text-center">
-                                            <button type="button" style="width: auto;margin: auto"
+                                            <form action="{{url('approve_interview')}}" method="post">
+                                                @csrf
+                                                <input type="hidden" name="user_id" id="user_id" value="{{$user->id}}">
+                                                <button type="submit" style="width: auto;margin: auto"
                                                 class="btn btn-sm btn-primary rounded-pill">Approve</button>
+                                            </form>
+                                            
                                         </div>
                                     @endif
                                 @endif

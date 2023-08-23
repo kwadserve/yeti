@@ -65,6 +65,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/schedule', 'schedule');
         Route::get('/interview', 'interview');
         Route::post('/book_interview', 'book_interview');
+        Route::post('/approve_interview', 'approve_interview');
         Route::post('/update_duration', 'update_duration');
         Route::post('/next_video', 'next_video');
     });
