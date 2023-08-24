@@ -64,8 +64,12 @@ Route::middleware('auth')->group(function () {
         Route::get('/course', 'course');
         Route::get('/schedule', 'schedule');
         Route::get('/interview', 'interview');
+        Route::get('/certificate', 'certificate');
         Route::post('/book_interview', 'book_interview');
         Route::post('/approve_interview', 'approve_interview');
+        Route::post('/reject_interview', 'reject_interview');
+        Route::post('/accept_yeti', 'accept_yeti');
+        Route::post('/reject_yeti', 'reject_yeti');
         Route::post('/update_duration', 'update_duration');
         Route::post('/next_video', 'next_video');
     });
@@ -83,6 +87,10 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     });
     Route::controller(UserController::class)->group(function () {
         Route::get('/users', 'userList');
+        Route::get('/users/pending_interview', 'pending');
+        Route::get('/users/booked_interview', 'booked');
+        Route::get('/users/yeti_accepted', 'accepted');
+        Route::get('/users/yeti_rejected', 'rejected');
         Route::get('/users/{id}', 'userInfo');
         Route::post('/users/{id}', 'userUpdate');
         Route::get('/users/{id}/edit', 'userEdit');

@@ -2,7 +2,29 @@
 @section('title')
     {{ strtok($user->name, ' ') }} | YIF | Youth Electoral Trained Instructor
 @endsection
-<?php $avatar = App\Http\Controllers\UserController::get_meta($user->id, 'avatar'); ?>
+<?php $avatar = App\Http\Controllers\UserController::get_meta($user->id, 'avatar');
+$status = App\Http\Controllers\UserController::get_meta($user->id, 'interview_status');
+switch ($status) {
+    case 'pending':
+        $status_text = 'Interview Date Selected!';
+        break;
+    case 'declined':
+        $status_text = 'Interview Date Rejected!';
+        break;
+    case 'booked':
+        $status_text = 'Interview Date Confirmed!';
+        break;
+    case 'accepted':
+        $status_text = 'Selected as YETI!';
+        break;
+    case 'rejected':
+        $status_text = 'Rejected as YETI!';
+        break;
+    default:
+        $status_text = '';
+        break;
+}
+?>
 @section('content')
     <div class="pagetitle">
         <h1>Profile</h1>
@@ -116,17 +138,38 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-3 col-md-4 label ">Status</div>
-                                        <div class="col-lg-9 col-md-8">{{ App\Http\Controllers\UserController::get_meta($user->id, 'interview_status') }}</div>
+                                        <div class="col-lg-9 col-md-8">{{ $status_text }}</div>
                                     </div>
-                                    @if (App\Http\Controllers\UserController::get_meta($user->id, 'interview_status') == 'pending')
+                                    @if ($status == 'pending')
                                         <div class="row text-center">
                                             <form action="{{url('approve_interview')}}" method="post">
                                                 @csrf
                                                 <input type="hidden" name="user_id" id="user_id" value="{{$user->id}}">
                                                 <button type="submit" style="width: auto;margin: auto"
-                                                class="btn btn-sm btn-primary rounded-pill">Approve</button>
+                                                class="btn btn-sm btn-primary rounded-pill">Confirm</button>
                                             </form>
-                                            
+                                            <form action="{{url('reject_interview')}}" method="post">
+                                                @csrf
+                                                <input type="hidden" name="user_id" id="user_id" value="{{$user->id}}">
+                                                <button type="submit" style="width: auto;margin: auto"
+                                                class="btn btn-sm btn-primary rounded-pill">Decline</button>
+                                            </form>                                            
+                                        </div>
+
+                                    @elseif ($status == 'booked')
+                                        <div class="row text-center">
+                                            <form action="{{url('accept_yeti')}}" method="post">
+                                                @csrf
+                                                <input type="hidden" name="user_id" id="user_id" value="{{$user->id}}">
+                                                <button type="submit" style="width: auto;margin: auto"
+                                                class="btn btn-sm btn-primary rounded-pill">Accept</button>
+                                            </form>
+                                            <form action="{{url('reject_yeti')}}" method="post">
+                                                @csrf
+                                                <input type="hidden" name="user_id" id="user_id" value="{{$user->id}}">
+                                                <button type="submit" style="width: auto;margin: auto"
+                                                class="btn btn-sm btn-primary rounded-pill">Reject</button>
+                                            </form>                                           
                                         </div>
                                     @endif
                                 @endif

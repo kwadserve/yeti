@@ -128,6 +128,34 @@ class UserController extends Controller
         return view('admin.user.list', compact('users'));
     }
 
+    //Admin Users List
+    public function pending()
+    {
+        $users = User::where('role', 'user')->orderBy('created_at', 'DESC')->get();
+        return view('admin.user.pending', compact('users'));
+    }
+
+    //Admin Users List
+    public function booked()
+    {
+        $users = User::where('role', 'user')->orderBy('created_at', 'DESC')->get();
+        return view('admin.user.booked', compact('users'));
+    }
+
+    //Admin Users List
+    public function accepted()
+    {
+        $users = User::where('role', 'user')->orderBy('created_at', 'DESC')->get();
+        return view('admin.user.accepted', compact('users'));
+    }
+
+    //Admin Users List
+    public function rejected()
+    {
+        $users = User::where('role', 'user')->orderBy('created_at', 'DESC')->get();
+        return view('admin.user.rejected', compact('users'));
+    }
+
     //Admin User Info
     public function userInfo($id)
     {

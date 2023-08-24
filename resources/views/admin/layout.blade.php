@@ -89,10 +89,38 @@
                 </a>
             </li><!-- End Dashboard Nav -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ url('admin/users') }}">
+                <a class="nav-link" data-bs-target="#users-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-person"></i>
                     <span>Users</span>
+                    <i class="bi bi-chevron-down ms-auto"></i>
                 </a>
+                <ul id="users-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="{{ url('admin/users') }}">
+                            <i class="bi bi-circle"></i><span>All</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('admin/users/pending_interview')}}">
+                            <i class="bi bi-circle"></i><span>Pending</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('admin/users/booked_interview')}}">
+                            <i class="bi bi-circle"></i><span>Booked</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('admin/users/yeti_accepted')}}">
+                            <i class="bi bi-circle"></i><span>Accepted</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('admin/users/yeti_rejected')}}">
+                            <i class="bi bi-circle"></i><span>Rejected</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
             <!-- End Users Page Nav -->
         </ul>

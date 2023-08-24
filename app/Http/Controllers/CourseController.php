@@ -57,6 +57,11 @@ class CourseController extends Controller
     public function schedule()
     {
         $resultDate = UserMeta::where('user_id', Auth::id())->where('meta_key', 'result_date')->first();
+        $status = UserMeta::where('user_id', Auth::id())->where('meta_key', 'interview_status')->first();
+
+        if($status)
+        return redirect()->to('interview');
+        else
         return view('frontend.course.schedule', compact('resultDate'));
     }
 
@@ -121,21 +126,61 @@ class CourseController extends Controller
     {
         $user = Auth::user();
         $interview = UserMeta::where('user_id', $user->id)->where('meta_key', 'interview_booked')->first();
+        $status = UserMeta::where('user_id', Auth::id())->where('meta_key', 'interview_status')->first();
 
         if($interview)
-        return view('frontend.interview', compact('interview'));
+        return view('frontend.interview', compact('interview', 'status'));
         else
         return redirect()->to('course');
     }
 
-    //Approve Interview
+    //Accept Interview
     public function approve_interview(Request $request)
     {
         $user = User::where('id', $request->user_id)->first();
         $approved = UserMeta::where('user_id', $request->user_id)->where('meta_key', 'interview_status')->update([
-            'meta_value' => 'approved'
+            'meta_value' => 'booked'
         ]);
 
         return redirect()->to('admin/users/'.$request->user_id);
+    }
+
+    //Reject Interview
+    public function reject_interview(Request $request)
+    {
+        $user = User::where('id', $request->user_id)->first();
+        $approved = UserMeta::where('user_id', $request->user_id)->where('meta_key', 'interview_status')->update([
+            'meta_value' => 'declined'
+        ]);
+
+        return redirect()->to('admin/users/'.$request->user_id);
+    }
+
+    //Approve as YETI
+    public function accept_yeti(Request $request)
+    {
+        $user = User::where('id', $request->user_id)->first();
+        $approved = UserMeta::where('user_id', $request->user_id)->where('meta_key', 'interview_status')->update([
+            'meta_value' => 'accepted'
+        ]);
+
+        return redirect()->to('admin/users/'.$request->user_id);
+    }
+
+    //Reject as YETI
+    public function reject_yeti(Request $request)
+    {
+        $user = User::where('id', $request->user_id)->first();
+        $approved = UserMeta::where('user_id', $request->user_id)->where('meta_key', 'interview_status')->update([
+            'meta_value' => 'rejected'
+        ]);
+
+        return redirect()->to('admin/users/'.$request->user_id);
+    }
+
+    //Certificate
+    public function certificate()
+    {
+        $user = Auth::user();
     }
 }

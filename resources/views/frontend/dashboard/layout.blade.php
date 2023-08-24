@@ -71,7 +71,7 @@
                                                                 class="feather-home"></i><span>Dashboard</span></a></li>
                                                     <li><a href="{{ url('profile') }}"><i class="feather-user"></i><span>My
                                                                 Profile</span></a></li>
-                                                    <li><a href="{{ url('quiz-attempts') }}"><i
+                                                    <li><a href="{{ url('certificate') }}" target="_blank"><i
                                                                 class="feather-download"></i><span>Download
                                                                 Certificate</span></a></li>
                                                 </ul>
