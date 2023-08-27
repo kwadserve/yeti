@@ -164,6 +164,13 @@ class CourseController extends Controller
             'meta_value' => 'accepted'
         ]);
 
+        $acceptedDate = UserMeta::updateOrCreate([
+            'user_id' => $request->user_id,
+            'meta_key' => 'yeti_accepted',
+        ],[
+            'meta_value' => Carbon::now()->toDateString(),
+        ]);
+
         return redirect()->to('admin/users/'.$request->user_id);
     }
 
@@ -182,5 +189,6 @@ class CourseController extends Controller
     public function certificate()
     {
         $user = Auth::user();
+        
     }
 }

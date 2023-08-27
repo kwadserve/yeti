@@ -2,6 +2,7 @@
 @section('content')
     <?php $avatar = App\Http\Controllers\UserController::get_meta(Auth::id(), 'avatar');
     $cover_photo = App\Http\Controllers\UserController::get_meta(Auth::id(), 'cover_photo');
+    $interview_status = App\Http\Controllers\UserController::get_meta(Auth::id(), 'interview_status');
     ?>
     <a class="close_side_menu" href="javascript:void(0);"></a>
     <div class="rbt-page-banner-wrapper">
@@ -71,9 +72,14 @@
                                                                 class="feather-home"></i><span>Dashboard</span></a></li>
                                                     <li><a href="{{ url('profile') }}"><i class="feather-user"></i><span>My
                                                                 Profile</span></a></li>
-                                                    <li><a href="{{ url('certificate') }}" target="_blank"><i
-                                                                class="feather-download"></i><span>Download
-                                                                Certificate</span></a></li>
+                                                    @if ($interview_status && $interview_status === 'accepted')
+                                                        <li>
+                                                            <a href="{{ url('certificate') }}" target="_blank">
+                                                                <i class="feather-download"></i>
+                                                                <span>Download Certificate</span>
+                                                            </a>
+                                                        </li>
+                                                    @endif
                                                 </ul>
                                             </nav>
 

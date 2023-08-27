@@ -34,7 +34,7 @@
                                 <i class="feather-monitor"></i>
                             </div>
                             <div class="content">
-                                <h3 class="counter without-icon color-primary"><span class="odometer" data-count="1"></span>
+                                <h3 class="counter without-icon color-primary"><span class="odometer" data-count="{{$user->course_status === 'ongoing' ? 1 : 0}}"></span>
                                 </h3>
                                 <span class="rbt-title-style-2 d-block">ACTIVE COURSES</span>
                             </div>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="content">
                                 <h3 class="counter without-icon color-secondary"><span class="odometer"
-                                        data-count="0">00</span>
+                                        data-count="{{$user->course_status === 'completed' ? 1 : 0}}">00</span>
                                 </h3>
                                 <span class="rbt-title-style-2 d-block">Completed Courses</span>
                             </div>
