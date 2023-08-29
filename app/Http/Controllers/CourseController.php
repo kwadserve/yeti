@@ -189,6 +189,6 @@ class CourseController extends Controller
     public function certificate()
     {
         $user = Auth::user();
-        
+        return view('frontend.certificate', compact('user'));
     }
 }
