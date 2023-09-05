@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use App\Models\User;
 use App\Models\UserMeta;
 use Illuminate\Http\Request;
@@ -161,5 +162,13 @@ class UserController extends Controller
     {
         $user = User::where('id', $id)->first();
         return view('admin.user.single-user', compact('user'));
+    }
+
+    //Events
+    public function events()
+    {
+        $user =  Auth::user();
+        $events = Event::orderBy('start_date', 'DESC')->get();
+        return view('frontend.dashboard.events', compact('events','user'));
     }
 }

@@ -56,6 +56,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/profile', 'profile');
         Route::get('/settings', 'setting');
         Route::get('/dashboard', 'dashboard');
+        Route::get('/events', 'events');
         Route::post('/update-profile', 'update_profile');
         Route::post('/update-password', 'update_password');
         Route::post('/update-social', 'update_social');

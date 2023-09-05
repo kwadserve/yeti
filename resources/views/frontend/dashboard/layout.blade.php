@@ -79,6 +79,12 @@
                                                                 <span>Download Certificate</span>
                                                             </a>
                                                         </li>
+                                                        <li>
+                                                            <a href="{{ url('events') }}">
+                                                                <i class="feather-at-sign"></i>
+                                                                <span>Events</span>
+                                                            </a>
+                                                        </li>
                                                     @endif
                                                 </ul>
                                             </nav>
